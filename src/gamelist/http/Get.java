@@ -18,7 +18,7 @@ import org.apache.http.impl.client.HttpClients;
 public class Get {
 	
 	private final static String URLGETGAMELIST = "http://thegamesdb.net/api/GetGamesList.php?name=#1";
-	private final static String URLGETGAMEs = "http://thegamesdb.net/api/GetGames.php?id=#1";
+	private final static String URLGETGAMES = "http://thegamesdb.net/api/GetGame.php?name=#1";
 	private CloseableHttpClient httpClient;
 	private HttpGet httpGet;
 	private Properties properties;
@@ -48,6 +48,26 @@ public class Get {
 	}
 	
 	
+	public String getGameData(String name) throws URISyntaxException{
+		String respuesta = null;
+		setProperties(properties);
+		ResponseHandler<String> respuestaHandler = new BasicResponseHandler();
+		URI uri = new URI(getURI(name, URLGETGAMES));
+		httpGet.setURI(uri);
+		try {
+			respuesta = httpClient.execute(httpGet, respuestaHandler);
+		} catch (ClientProtocolException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return respuesta; 
+		
+	}
+	
+	
 	private String getURI(String name, String platform, String uri){
 		String initURI = uri;
 		StringBuilder sb = new StringBuilder();
@@ -55,6 +75,12 @@ public class Get {
 		return sb.toString();
 	}
 	
+	private String getURI(String name, String uri){
+		String initURI = uri;
+		StringBuilder sb = new StringBuilder();
+		sb.append(initURI.replaceFirst("#1", name));
+		return sb.toString();
+	}
 	
 	private void setProperties(Properties properties){
 		File file = new File("properties//translate.properties");

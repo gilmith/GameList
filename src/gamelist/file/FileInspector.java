@@ -10,12 +10,12 @@ public class FileInspector {
 	
 	private File file;
 	private File[] arrayFiles;
+	private String platform = null;
 	
 	public FileInspector(String path){
 		File file = new File(path);
 		arrayFiles = FileUtils.convertFileCollectionToFileArray(
 				FileUtils.listFilesAndDirs(file, TrueFileFilter.INSTANCE, TrueFileFilter.INSTANCE));
-		
 		
 	}
 	
@@ -24,11 +24,27 @@ public class FileInspector {
 	public ArrayList<String> getGameListStorage(){
 		ArrayList<String> listado = new ArrayList<String>();
 		for(File f : arrayFiles){
-			String fname = f.getName();
-			String nname = fname.replaceAll(" ", "%20");
-			fname = nname.replaceFirst("(Disc *)", "");
-			listado.add(fname);		
+			if(f.isFile()){
+				String fname = f.getName();
+				fname = fname.replaceAll("\\(Disc \\d\\)\\.[a-z,A-Z]*", "");
+				fname = fname.replaceAll("", "%20");
+				listado.add(fname);
+			} else {
+				platform = f.getName();
+			}
 		}
 		return listado;
+	}
+
+
+
+	public String getPlatform() {
+		return platform;
+	}
+
+
+
+	public void setPlatform(String platform) {
+		this.platform = platform;
 	}
 }
