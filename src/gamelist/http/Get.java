@@ -3,8 +3,14 @@ package gamelist.http;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.net.URL;
+import java.net.URLConnection;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Properties;
 
 import org.apache.http.client.ClientProtocolException;
@@ -92,6 +98,16 @@ public class Get {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	
+	public void downloadImagen(String portada, String portdaSplitted) throws MalformedURLException, IOException{
+		URL url = new URL("http://thegamesdb.net/banners/" + portada);
+		URLConnection uc = url.openConnection();
+		uc.addRequestProperty("User-Agent", 
+				"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)");
+		InputStream in = uc.getInputStream();
+		Files.copy(in, Paths.get("/mnt/seagate/raspberry/roms/psx/downloaded_images/" + 
+		portdaSplitted));
 	}
 
 }
