@@ -1,0 +1,12 @@
+      <game id="$id" source="theGamesDB.net">
+          <path>./$path</path>
+          <name>$Titulo</name>
+          <desc>$Resumen</desc>
+          <image>./images/$Portada</image>
+          <rating>$Nota</rating>
+          <releasedate>$Lanzamiento</releasedate>
+          <developer>$Desarrolladora</developer>
+          <publisher>$Publicadora</publisher>
+          <genre>$Genero</genre>
+          <players>$Jugadores</players>
+      </game>
