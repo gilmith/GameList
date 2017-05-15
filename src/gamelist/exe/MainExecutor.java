@@ -32,7 +32,7 @@ public class MainExecutor {
 			ArrayList<String> ficheros = fi.getGameFileName();
 			StringBuilder sb = new StringBuilder("<? xml version=\"1.0\" encoding=\"UTF-8\" ?>");
 			for(String s : nombres){
-				consulta = get.getGameData(s.replace(" ", "%20"));
+				consulta = get.getGameData(s.replace(" ", "%20"),fi.getPlatform());
 				log.debug(consulta);
 				ArrayList<Integer> posiciones = buscaCoincidencias(ficheros, s);
 				for(Integer i : posiciones){
@@ -52,6 +52,9 @@ public class MainExecutor {
 		Properties props = new Properties();
 		try {
 			props.load(transformacion.trans());
+			/*ahora la respuesta se adapta al like. hay que seleccionar el titulo que se corresponda.
+			 * hay que iterar sobre los titulos hasta que encuentre el que sea igual Titulo[i]=
+			 */
 			props.put("path", filename);
 			GameListFile glf = new GameListFile(props);
 			return glf.sustituir();

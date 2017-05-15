@@ -38,8 +38,8 @@ public class FileInspector {
 				if (!listado.contains(fname)){
 					listado.add(fname);
 				}
-			} else {
-				platform = f.getName();
+			} else if (!f.isFile()){
+				platform = f.getAbsolutePath().split("/")[5];
 			}
 		}
 		return listado;
