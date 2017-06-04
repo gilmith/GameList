@@ -3,66 +3,59 @@
 <Data>
 <baseImgUrl>http://thegamesdb.net/banners/</baseImgUrl>
 <Game>
-<id>31691</id>
-<GameTitle>Capcom Generations</GameTitle>
+<id>495</id>
+<GameTitle>Alundra</GameTitle>
 <PlatformId>10</PlatformId>
 <Platform>Sony Playstation</Platform>
-<ReleaseDate>09/03/1999</ReleaseDate>
-<Overview>Capcom Generations (Capcom Generation in Japan) was a retrospective series of five collections of Capcom's greatest games from their early days. All (except for Super Ghouls 'n Ghosts, made for the SNES) were direct ports of the original arcade games. The series was released for the PlayStation and the Sega Saturn in 1998. Only the first four volumes were released in Europe, with the fifth retitled Street Fighter Collection 2. Only the last volume (Street Fighter Collection 2) was released in North America. This all changed when they were repackaged as Capcom Classics Collection.</Overview>
-<Players>1</Players><Co-op>No</Co-op>
-<Publisher>Virgin Interactive</Publisher>
-<Developer>Capcom</Developer>
+<ReleaseDate>12/31/1997</ReleaseDate>
+<Overview>Between the worlds of light and dark lies the world of dram. A world where the rule of reason loosens its grip. A place where an insidious evil is stealing minds and blackening the hearts of those from the world of light. Grab a weapon and become the dreamwalker Alundra as he struggles to purge the evil Id of an ancient world before it falls to ash.
+
+Explore dungeons, find monster butt as you weave between tense reality and nightmarish dreams to save the hapless masses. With a wide cast of characters and scores of challenging puzzles created by the people responsible for Landstalker on the Genesis. Alundra will rob you of precious sleep until you finish.</Overview>
+<ESRB>T - Teen</ESRB>
+<Genres><genre>Action</genre><genre>Adventure</genre><genre>Role-Playing</genre></Genres><Players>1</Players><Co-op>No</Co-op>
+<Publisher>Working Designs</Publisher>
+<Developer>Matrix Software</Developer>
+<Rating>6.5</Rating>
 <Images>
-<boxart side="back" width="1769" height="1382" thumb="boxart/thumb/original/back/31691-1.jpg">boxart/original/back/31691-1.jpg</boxart>
-<boxart side="front" width="640" height="547" thumb="boxart/thumb/original/front/31691-1.jpg">boxart/original/front/31691-1.jpg</boxart>
-</Images>
-</Game>
-<Game>
-<id>9351</id>
-<GameTitle>Capcom vs SNK: Millennium Fight 2000 Pro</GameTitle>
-<PlatformId>10</PlatformId>
-<Platform>Sony Playstation</Platform>
-<ReleaseDate>08/14/2002</ReleaseDate>
-<Overview>Capcom vs. SNK Pro is the challenge of the millennium, with two monster corporations at war only one solution. A massive martial arts event organized to settle the score and eliminate all conflict between the two parties. Many of the world's most famous warriors have joined and the public is going mad with anticipation. Join over 30 brawlers from Capcom's legendary Street Fighter and SNK's world-renowned King of Fighters series as they fight for universal domination. Capcom vs. SNK Pro is the ultimate collision of strength and power.</Overview>
-<ESRB>T - Teen</ESRB>
-<Genres><genre>Fighting</genre></Genres><Players>2</Players><Co-op>No</Co-op>
-<Publisher>Capcom</Publisher>
-<Developer>Capcom</Developer>
-<Rating>6.3333</Rating><Similar><SimilarCount>1</SimilarCount><Game><id>14994</id><PlatformId>16</PlatformId></Game></Similar><Images>
-<boxart side="back" width="640" height="547" thumb="boxart/thumb/original/back/9351-1.jpg">boxart/original/back/9351-1.jpg</boxart>
-<boxart side="front" width="1440" height="1426" thumb="boxart/thumb/original/front/9351-2.jpg">boxart/original/front/9351-2.jpg</boxart>
-<screenshot>
-<original width="640" height="480">screenshots/9351-1.jpg</original>
-<thumb>screenshots/thumb/9351-1.jpg</thumb>
-</screenshot>
-<clearlogo width="400" height="289">clearlogo/9351.png</clearlogo></Images>
-</Game>
-<Game>
-<id>9352</id>
-<GameTitle>Marvel vs. Capcom: Clash of Super Heroes</GameTitle>
-<PlatformId>10</PlatformId>
-<Platform>Sony Playstation</Platform>
-<ReleaseDate>01/31/2000</ReleaseDate>
-<Overview>Marvel vs. Capcom: Clash of Super Heroes is the fifth Marvel Comics-licensed fighting game by Capcom and the third game in the Marvel vs. Capcom series. In contrast to X-Men vs. Street Fighter and Marvel Super Heroes vs. Street Fighter, the game features characters from numerous Capcom franchises such as Mega Man and Strider, rather than just Street Fighter characters. The game takes place within the Marvel comic continuity, as Professor Charles Xavier calls out for heroes to stop him before he merges with the consciousness of Magneto and becomes the being known as Onslaught, the final boss. The game was developed in late 1997 and first released in January 1998.</Overview>
-<ESRB>T - Teen</ESRB>
-<Genres><genre>Fighting</genre></Genres><Players>2</Players><Co-op>No</Co-op>
-<Publisher>Capcom</Publisher>
-<Developer>capcom</Developer>
-<Rating>7</Rating><Similar><SimilarCount>2</SimilarCount><Game><id>7876</id><PlatformId>23</PlatformId></Game><Game><id>195</id><PlatformId>16</PlatformId></Game></Similar><Images>
 <fanart>
-<original width="1920" height="1080">fanart/original/9352-1.jpg</original>
-<thumb>fanart/thumb/9352-1.jpg</thumb>
+<original width="1280" height="720">fanart/original/495-1.jpg</original>
+<thumb>fanart/thumb/495-1.jpg</thumb>
 </fanart>
 <fanart>
-<original width="1920" height="1080">fanart/original/9352-2.jpg</original>
-<thumb>fanart/thumb/9352-2.jpg</thumb>
+<original width="1280" height="720">fanart/original/495-2.jpg</original>
+<thumb>fanart/thumb/495-2.jpg</thumb>
 </fanart>
-<boxart side="back" width="982" height="768" thumb="boxart/thumb/original/back/9352-1.jpg">boxart/original/back/9352-1.jpg</boxart>
-<boxart side="front" width="640" height="641" thumb="boxart/thumb/original/front/9352-1.jpg">boxart/original/front/9352-1.jpg</boxart>
+<fanart>
+<original width="1280" height="720">fanart/original/495-3.jpg</original>
+<thumb>fanart/thumb/495-3.jpg</thumb>
+</fanart>
+<boxart side="back" width="1743" height="1560" thumb="boxart/thumb/original/back/495-1.jpg">boxart/original/back/495-1.jpg</boxart>
+<boxart side="front" width="984" height="998" thumb="boxart/thumb/original/front/495-1.png">boxart/original/front/495-1.png</boxart>
 <screenshot>
-<original width="1024" height="768">screenshots/9352-1.jpg</original>
-<thumb>screenshots/thumb/9352-1.jpg</thumb>
+<original width="320" height="240">screenshots/495-1.jpg</original>
+<thumb>screenshots/thumb/495-1.jpg</thumb>
 </screenshot>
-<clearlogo width="400" height="250">clearlogo/9352.png</clearlogo></Images>
+<screenshot>
+<original width="320" height="240">screenshots/495-2.jpg</original>
+<thumb>screenshots/thumb/495-2.jpg</thumb>
+</screenshot>
+<screenshot>
+<original width="320" height="240">screenshots/495-3.jpg</original>
+<thumb>screenshots/thumb/495-3.jpg</thumb>
+</screenshot>
+<screenshot>
+<original width="320" height="240">screenshots/495-4.jpg</original>
+<thumb>screenshots/thumb/495-4.jpg</thumb>
+</screenshot>
+<screenshot>
+<original width="320" height="240">screenshots/495-5.jpg</original>
+<thumb>screenshots/thumb/495-5.jpg</thumb>
+</screenshot>
+<screenshot>
+<original width="320" height="240">screenshots/495-6.jpg</original>
+<thumb>screenshots/thumb/495-6.jpg</thumb>
+</screenshot>
+<clearlogo width="400" height="209">clearlogo/495.png</clearlogo></Images>
 </Game>
 </Data>
+

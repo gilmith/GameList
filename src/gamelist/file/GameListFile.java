@@ -25,7 +25,6 @@ public class GameListFile {
 		try {
 			encoded = Files.readAllBytes(Paths.get("/home/jake/workspace/GameList/xslt/GameList.xml"));
 			estructura =  new String(encoded, "UTF-8");
-			
 			getKeys(xslt);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -51,11 +50,15 @@ public class GameListFile {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				
+				System.out.println(estructuraBase);
+
 			} else {
 				estructuraBase = estructuraBase.replace("$" + itString, xslt.getProperty(itString));
+				System.out.println(estructuraBase);
+
 			}
 		}
+		System.out.println(estructuraBase);
 		return estructuraBase;
 		
 	}

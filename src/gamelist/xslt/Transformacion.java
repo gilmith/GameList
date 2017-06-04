@@ -34,12 +34,14 @@ public class Transformacion {
 	}
 	
 	
-	public Transformacion(File string2File, String xsltfilepath) {
+	public Transformacion(File string2File, String xsltfilepath, String title) {
 		sourceinput = new StreamSource(string2File);
 		xsltinput = new StreamSource(new File(xsltfilepath));
 	    TransformerFactory factory = TransformerFactory.newInstance();
+	    
 	    try {
 			transformer = factory.newTransformer(xsltinput);
+			transformer.setParameter("paramnombre", title);
 		} catch (TransformerConfigurationException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

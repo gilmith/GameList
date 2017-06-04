@@ -2,7 +2,9 @@
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:output method="text"/> 
 	<xsl:template match="/">
+	<xsl:param name="paranmobre"/>
 		<xsl:for-each select="Data/Game">
+			<xsl:value-of select="$paramnombre"/>
 			<xsl:text>ID=</xsl:text>
 			<xsl:value-of select="id"/>
 			<xsl:text>&#10;</xsl:text>

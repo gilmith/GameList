@@ -33,10 +33,10 @@ public class MainExecutor {
 			StringBuilder sb = new StringBuilder("<? xml version=\"1.0\" encoding=\"UTF-8\" ?>");
 			for(String s : nombres){
 				consulta = get.getGameData(s.replace(" ", "%20"),fi.getPlatform());
-				log.debug(consulta);
+				System.out.println(consulta);
 				ArrayList<Integer> posiciones = buscaCoincidencias(ficheros, s);
 				for(Integer i : posiciones){
-					sb.append(genGameList(consulta,ficheros.get(i)));
+					sb.append(genGameList(consulta,ficheros.get(i), s));
 				}
 			}
 			FileUtils.writeStringToFile(new File("/mnt/seagate/raspberry/roms/psx/gameListJacobo.xml"), sb.toString());
@@ -47,14 +47,11 @@ public class MainExecutor {
 	}
 	
 	
-	private static String genGameList(String consulta, String filename){
-		Transformacion transformacion = new Transformacion(Utils.string2File(consulta), "/home/jake/workspace/GameList/xslt/GetGameData.xsl");		
+	private static String genGameList(String consulta, String filename, String title){
+		Transformacion transformacion = new Transformacion(Utils.string2File(consulta), "/home/jake/workspace/GameList/xslt/GetGameData.xsl", title);		
 		Properties props = new Properties();
 		try {
 			props.load(transformacion.trans());
-			/*ahora la respuesta se adapta al like. hay que seleccionar el titulo que se corresponda.
-			 * hay que iterar sobre los titulos hasta que encuentre el que sea igual Titulo[i]=
-			 */
 			props.put("path", filename);
 			GameListFile glf = new GameListFile(props);
 			return glf.sustituir();
