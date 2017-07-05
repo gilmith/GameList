@@ -50,11 +50,9 @@ public class GameListFile {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				System.out.println(estructuraBase);
 
 			} else {
 				estructuraBase = estructuraBase.replace("$" + itString, xslt.getProperty(itString));
-				System.out.println(estructuraBase);
 
 			}
 		}

@@ -75,6 +75,7 @@ public class Get {
 	}
 	
 	public String getGameData(String name, String platform) throws URISyntaxException{
+		name = replacesName(name);
 		String respuesta = null;
 		setProperties(properties);
 		ResponseHandler<String> respuestaHandler = new BasicResponseHandler();
@@ -132,6 +133,21 @@ public class Get {
 		} catch(FileAlreadyExistsException faex){
 			System.out.println("Portada ya descargada, juego multidisco");
 		}
+	}
+	
+	private String replacesName(String name){
+		if(name.contains(" ") || name.contains(":") || name.contains("-")){
+			String nname = "";
+			if(name.contains(" ")){
+				nname = name.replace(" ", "%20");
+			} else if(nname.contains(":")){
+				nname = nname.replace(":", "%3A");
+			} else if(nname.contains("-")){
+				nname = nname.replace("-", "%2D");
+			}
+			return nname;
+		}
+		return name;
 	}
 
 }

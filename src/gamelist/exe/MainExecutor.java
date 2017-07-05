@@ -32,10 +32,11 @@ public class MainExecutor {
 			ArrayList<String> ficheros = fi.getGameFileName();
 			StringBuilder sb = new StringBuilder("<? xml version=\"1.0\" encoding=\"UTF-8\" ?>");
 			for(String s : nombres){
-				consulta = get.getGameData(s.replace(" ", "%20"),fi.getPlatform());
-				System.out.println(consulta);
+				System.out.println("consultando para el juego " + s);
+				consulta = get.getGameData(s,fi.getPlatform());
 				ArrayList<Integer> posiciones = buscaCoincidencias(ficheros, s);
 				for(Integer i : posiciones){
+					System.out.println("consultando para el gengame " + s);
 					sb.append(genGameList(consulta,ficheros.get(i), s));
 				}
 			}

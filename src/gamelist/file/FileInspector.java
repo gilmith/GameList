@@ -29,7 +29,7 @@ public class FileInspector {
 			if(f.isFile() && 
 					(f.getName().endsWith(".bin") || f.getName().endsWith("iso"))){
 				String fname = f.getName();
-				Pattern patron = Pattern.compile("(^[A-Z,a-z,0-9, ,\\-, _, \\']*)");
+				Pattern patron = Pattern.compile("(^[A-Z,a-z,0-9, ,\\-, _, \\',:]*)");
 				Matcher match = patron.matcher(fname);
 				if (match.find()){
 					fname = match.group(0);
