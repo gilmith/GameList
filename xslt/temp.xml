@@ -3,493 +3,121 @@
 <Data>
 <baseImgUrl>http://thegamesdb.net/banners/</baseImgUrl>
 <Game>
-<id>2937</id>
-<GameTitle>Resident Evil 2</GameTitle>
-<AlternateTitles><title>Biohazard 2</title></AlternateTitles><PlatformId>10</PlatformId>
-<Platform>Sony Playstation</Platform>
-<ReleaseDate>01/21/1998</ReleaseDate>
-<Overview>If the Suspense Doesn't Kill You, Something Else Will
-
-Face your fears in the ultimate test for survival. Something is desperately wrong in Raccoon City. A muta-genic virus has broken loose and the entire town is infested. Blood-thirsty zombies, hideous mutations now overwhelm the community. When Leon and Claire arrive in town, their nightmare is just beginning...Now, you control their destiny.
-2 Separate Adventures. Play as Leon Kennedy or Claire Redfield in an all out struggle for survival
-Loaded with hidden items that contain vital information relating to the entire Resident Evil series
-Hidden game modes -- play the panic struck '4th Survivor' mode or as the hidden character, Tofu
-Special settings to adjust the intensity of the game according to players skill and experience</Overview>
-<ESRB>M - Mature</ESRB>
-<Genres><genre>Horror</genre><genre>Shooter</genre></Genres><Players>1</Players><Co-op>No</Co-op>
-<Youtube>http://www.youtube.com/watch?v=aFvyLkws6jE</Youtube>
-<Publisher>Capcom</Publisher>
-<Developer>Capcom</Developer>
-<Rating>9.2</Rating><Similar><SimilarCount>5</SimilarCount><Game><id>32111</id><PlatformId>4940</PlatformId></Game><Game><id>397</id><PlatformId>3</PlatformId></Game><Game><id>5439</id><PlatformId>2</PlatformId></Game><Game><id>3972</id><PlatformId>1</PlatformId></Game><Game><id>3958</id><PlatformId>16</PlatformId></Game></Similar><Images>
-<fanart>
-<original width="1920" height="1080">fanart/original/2937-1.jpg</original>
-<thumb>fanart/thumb/2937-1.jpg</thumb>
-</fanart>
-<fanart>
-<original width="1920" height="1080">fanart/original/2937-2.jpg</original>
-<thumb>fanart/thumb/2937-2.jpg</thumb>
-</fanart>
-<fanart>
-<original width="1920" height="1080">fanart/original/2937-3.jpg</original>
-<thumb>fanart/thumb/2937-3.jpg</thumb>
-</fanart>
-<fanart>
-<original width="1920" height="1080">fanart/original/2937-4.jpg</original>
-<thumb>fanart/thumb/2937-4.jpg</thumb>
-</fanart>
-<boxart side="back" width="1005" height="860" thumb="boxart/thumb/original/back/2937-1.jpg">boxart/original/back/2937-1.jpg</boxart>
-<boxart side="front" width="1284" height="1284" thumb="boxart/thumb/original/front/2937-2.jpg">boxart/original/front/2937-2.jpg</boxart>
-<banner width="760" height="140">graphical/2937-g.jpg</banner><screenshot>
-<original width="900" height="675">screenshots/2937-1.jpg</original>
-<thumb>screenshots/thumb/2937-1.jpg</thumb>
-</screenshot>
-<screenshot>
-<original width="900" height="675">screenshots/2937-2.jpg</original>
-<thumb>screenshots/thumb/2937-2.jpg</thumb>
-</screenshot>
-<screenshot>
-<original width="900" height="675">screenshots/2937-3.jpg</original>
-<thumb>screenshots/thumb/2937-3.jpg</thumb>
-</screenshot>
-<screenshot>
-<original width="900" height="675">screenshots/2937-4.jpg</original>
-<thumb>screenshots/thumb/2937-4.jpg</thumb>
-</screenshot>
-<screenshot>
-<original width="900" height="675">screenshots/2937-5.jpg</original>
-<thumb>screenshots/thumb/2937-5.jpg</thumb>
-</screenshot>
-<screenshot>
-<original width="900" height="675">screenshots/2937-6.jpg</original>
-<thumb>screenshots/thumb/2937-6.jpg</thumb>
-</screenshot>
-<screenshot>
-<original width="900" height="675">screenshots/2937-7.jpg</original>
-<thumb>screenshots/thumb/2937-7.jpg</thumb>
-</screenshot>
-<screenshot>
-<original width="900" height="675">screenshots/2937-8.jpg</original>
-<thumb>screenshots/thumb/2937-8.jpg</thumb>
-</screenshot>
-<clearlogo width="400" height="224">clearlogo/2937.png</clearlogo></Images>
-</Game>
-<Game>
-<id>1537</id>
-<GameTitle>Resident Evil</GameTitle>
+<id>9429</id>
+<GameTitle>Oddworld: Abe's Exoddus</GameTitle>
 <PlatformId>10</PlatformId>
 <Platform>Sony Playstation</Platform>
-<ReleaseDate>03/22/1996</ReleaseDate>
-<Overview>Gory attacks and unexplained disappearance brings your S.T.A.R.S. (Special Tactics and Rescue Squad) unit to investigate a remote mansion. Driven into the mansion, you are underpowered and on the run and must arm yourself with anything you can find to stay alive: knives, pistols, shotguns, flame-throwers. Solve puzzles, disarm traps and uncover mysteries while trying to survive the freaks of nature and lurking horrors to get to the source of the Resident Evil.
-
-You're dead scared... Face your fear!
-Unstoppable zombies, monstrous spiders, mutated snakes and other unknown horrors prowl hundreds of rooms in the gigantic mansion, underground lairs, garden, graveyard and guest houses.
-Unprecedented detail-intense texture maps, shadows and lighting effects.
-Realistic polygon character graphics, unique camera angles with an ominous digital-surround soundtrack for a rich and evil 3D environment.</Overview>
-<ESRB>M - Mature</ESRB>
-<Genres><genre>Adventure</genre><genre>Horror</genre><genre>Shooter</genre></Genres><Players>1</Players><Co-op>No</Co-op>
-<Youtube>http://www.youtube.com/watch?v=6jBqGn41HPI</Youtube>
-<Publisher>Capcom</Publisher>
-<Developer>Capcom</Developer>
-<Rating>9</Rating><Similar><SimilarCount>3</SimilarCount><Game><id>3944</id><PlatformId>2</PlatformId></Game><Game><id>10976</id><PlatformId>1</PlatformId></Game><Game><id>15266</id><PlatformId>17</PlatformId></Game></Similar><Images>
-<fanart>
-<original width="1920" height="1080">fanart/original/1537-1.jpg</original>
-<thumb>fanart/thumb/1537-1.jpg</thumb>
-</fanart>
-<fanart>
-<original width="1280" height="720">fanart/original/1537-2.jpg</original>
-<thumb>fanart/thumb/1537-2.jpg</thumb>
-</fanart>
-<fanart>
-<original width="1920" height="1080">fanart/original/1537-3.jpg</original>
-<thumb>fanart/thumb/1537-3.jpg</thumb>
-</fanart>
-<boxart side="back" width="1414" height="1414" thumb="boxart/thumb/original/back/1537-1.jpg">boxart/original/back/1537-1.jpg</boxart>
-<boxart side="front" width="640" height="1016" thumb="boxart/thumb/original/front/1537-1.png">boxart/original/front/1537-1.png</boxart>
-<screenshot>
-<original width="640" height="480">screenshots/1537-1.jpg</original>
-<thumb>screenshots/thumb/1537-1.jpg</thumb>
-</screenshot>
-<screenshot>
-<original width="640" height="480">screenshots/1537-2.jpg</original>
-<thumb>screenshots/thumb/1537-2.jpg</thumb>
-</screenshot>
-<screenshot>
-<original width="640" height="480">screenshots/1537-3.jpg</original>
-<thumb>screenshots/thumb/1537-3.jpg</thumb>
-</screenshot>
-<clearlogo width="400" height="94">clearlogo/1537.png</clearlogo></Images>
-</Game>
-<Game>
-<id>40670</id>
-<GameTitle>Resident Evil 1.5 (MZD)</GameTitle>
-<AlternateTitles><title>Biohazard 1.5 (MZD)</title></AlternateTitles><PlatformId>10</PlatformId>
-<Platform>Sony Playstation</Platform>
-<ReleaseDate>11/23/2014</ReleaseDate>
-<Overview>This is the MZD (Magic Zombie Door) build of Resident Evil 1.5 by Dark Biohazard.
-
-Resident Evil 1.5 / Biohazard 1.5 (also known as BIOHAZARD 2 PROTOTYPE) is the development name given to the first iteration of Resident Evil 2, which was scrapped in 1997.
-
-As the game was approaching its March 1997 release date, the developers were dissatisfied with the resulting product. Rather than releasing a game they were unhappy with, the developers took the risk of cancelling the game and developing the game again from scratch.</Overview>
-<ESRB>M - Mature</ESRB>
-<Genres><genre>Action</genre></Genres><Players>1</Players><Co-op>No</Co-op>
-<Youtube>http://www.youtube.com/watch?v=j017MmM0Le0</Youtube>
-<Publisher>Dark Biohazard</Publisher>
-<Developer>Dark Biohazard</Developer>
-<Images>
-<boxart side="front" width="1417" height="1417" thumb="boxart/thumb/original/front/40670-1.png">boxart/original/front/40670-1.png</boxart>
-</Images>
-</Game>
-<Game>
-<id>40515</id>
-<GameTitle>Resident Evil: Director's Cut</GameTitle>
-<PlatformId>10</PlatformId>
-<Platform>Sony Playstation</Platform>
-<ReleaseDate>09/30/1997</ReleaseDate>
-<Overview>In the ultimate experience of suspense and terror. Blood-thirsty zombies. Mutant beasts. Monstrous serpents. Untold mysteries lurk around every corner. The nightmare lives on in the award-winning game of survival horror. Now the terror comes alive with the Dual Shock Analog Controller to send shivers up and down your spine.</Overview>
-<ESRB>M - Mature</ESRB>
-<Genres><genre>Action</genre><genre>Horror</genre></Genres><Players>1</Players><Co-op>No</Co-op>
-<Youtube>http://www.youtube.com/watch?v=CpPm0fAtiz0</Youtube>
-<Publisher>Capcom</Publisher>
-<Developer>Capcom Production Studio 3</Developer>
-<Rating>9</Rating><Images>
-<boxart side="front" width="640" height="668" thumb="boxart/thumb/original/front/40515-1.jpg">boxart/original/front/40515-1.jpg</boxart>
-<screenshot>
-<original width="620" height="465">screenshots/40515-1.jpg</original>
-<thumb>screenshots/thumb/40515-1.jpg</thumb>
-</screenshot>
-</Images>
-</Game>
-<Game>
-<id>40668</id>
-<GameTitle>Resident Evil 1.5 (IGAS)</GameTitle>
-<AlternateTitles><title>Biohazard 1.5 (IGAS)</title></AlternateTitles><PlatformId>10</PlatformId>
-<Platform>Sony Playstation</Platform>
-<ReleaseDate>02/17/2013</ReleaseDate>
-<Overview>This is the initial release of Resident Evil 1.5 by Team IGAS. This version is a modified version of the 40% PVB of Resident Evil 1.5
-
-Resident Evil 1.5 / Biohazard 1.5 (also known as BIOHAZARD 2 PROTOTYPE) is the development name given to the first iteration of Resident Evil 2, which was scrapped in 1997.
-
-As the game was approaching its March 1997 release date, the developers were dissatisfied with the resulting product. Rather than releasing a game they were unhappy with, the developers took the risk of cancelling the game and developing the game again from scratch.</Overview>
-<ESRB>M - Mature</ESRB>
-<Genres><genre>Action</genre></Genres><Players>1</Players><Co-op>No</Co-op>
-<Youtube>http://www.youtube.com/watch?v=jCwsLZAY2oM</Youtube>
-<Publisher>Team IGAS</Publisher>
-<Developer>Team IGAS</Developer>
-<Rating>9</Rating><Images>
-<boxart side="front" width="1417" height="1417" thumb="boxart/thumb/original/front/40668-1.png">boxart/original/front/40668-1.png</boxart>
-</Images>
-</Game>
-<Game>
-<id>40669</id>
-<GameTitle>Resident Evil 1.5 PVB (061196)</GameTitle>
-<AlternateTitles><title>Biohazard 1.5 PVB (061196)</title></AlternateTitles><PlatformId>10</PlatformId>
-<Platform>Sony Playstation</Platform>
-<ReleaseDate>06/11/1996</ReleaseDate>
-<Overview>This is the first known release of 40% PVB of Resident Evil 1.5 (This version has not been modified and is completely vanilla)
-
-Resident Evil 1.5 / Biohazard 1.5 (also known as BIOHAZARD 2 PROTOTYPE) is the development name given to the first iteration of Resident Evil 2, which was scrapped in 1997.
-
-As the game was approaching its March 1997 release date, the developers were dissatisfied with the resulting product. Rather than releasing a game they were unhappy with, the developers took the risk of cancelling the game and developing the game again from scratch.</Overview>
-<Genres><genre>Action</genre></Genres><Players>1</Players><Co-op>No</Co-op>
-<Youtube>http://www.youtube.com/watch?v=d-KEpEMGZK0</Youtube>
-<Publisher>Capcom</Publisher>
-<Developer>Capcom</Developer>
-<Images>
-<boxart side="front" width="2160" height="2200" thumb="boxart/thumb/original/front/40669-1.png">boxart/original/front/40669-1.png</boxart>
-</Images>
-</Game>
-<Game>
-<id>1013</id>
-<GameTitle>Resident Evil 3: Nemesis</GameTitle>
-<PlatformId>10</PlatformId>
-<Platform>Sony Playstation</Platform>
-<ReleaseDate>09/22/1999</ReleaseDate>
-<Overview>Join Jill Valentine, the heroine and amazing survivor of the notorious disaster at the mansion, as her nightmare continues. After resigning from S.T.A.R.S. Jill now prepares to head out of Raccoon City...but it's not going to be easy. Caught in a town crawling with flesh eating zombies, more than ever she must rely on brute force and cunning to find a way to escape alive. This unique adventure intricately reveals more of Umbrella Corporation's nightmarish plot and picks up just hours before the events from Resident Evil 2.
-
-More zombies, more terror, and even more evil.
-More challenging enemies that come back to life at any time.
-Face off against the most terrifying mutations stalking the streets of Raccoon City.
-More detailed character actions: Try the dodge move to avoid an enemy's attack.
-Interact with the environment like never before: Use background objects defensively.
-A unique new drama which reveals more details of Umbrella Corporation's devious activities from the Resident Evil series.</Overview>
-<ESRB>M - Mature</ESRB>
-<Genres><genre>Adventure</genre><genre>Shooter</genre></Genres><Players>1</Players><Co-op>No</Co-op>
-<Youtube>http://www.youtube.com/watch?v=spDD7fxVETQ</Youtube>
-<Publisher>Capcom</Publisher>
-<Developer>Capcom</Developer>
-<Rating>8.7778</Rating><Similar><SimilarCount>3</SimilarCount><Game><id>5440</id><PlatformId>2</PlatformId></Game><Game><id>6936</id><PlatformId>1</PlatformId></Game><Game><id>3959</id><PlatformId>16</PlatformId></Game></Similar><Images>
-<fanart>
-<original width="1920" height="1080">fanart/original/1013-1.jpg</original>
-<thumb>fanart/thumb/1013-1.jpg</thumb>
-</fanart>
-<fanart>
-<original width="1920" height="1080">fanart/original/1013-2.jpg</original>
-<thumb>fanart/thumb/1013-2.jpg</thumb>
-</fanart>
-<fanart>
-<original width="1920" height="1080">fanart/original/1013-3.jpg</original>
-<thumb>fanart/thumb/1013-3.jpg</thumb>
-</fanart>
-<fanart>
-<original width="1920" height="1080">fanart/original/1013-4.jpg</original>
-<thumb>fanart/thumb/1013-4.jpg</thumb>
-</fanart>
-<fanart>
-<original width="1920" height="1080">fanart/original/1013-5.jpg</original>
-<thumb>fanart/thumb/1013-5.jpg</thumb>
-</fanart>
-<fanart>
-<original width="1920" height="1080">fanart/original/1013-6.jpg</original>
-<thumb>fanart/thumb/1013-6.jpg</thumb>
-</fanart>
-<boxart side="back" width="1621" height="1386" thumb="boxart/thumb/original/back/1013-1.jpg">boxart/original/back/1013-1.jpg</boxart>
-<boxart side="front" width="990" height="1000" thumb="boxart/thumb/original/front/1013-1.jpg">boxart/original/front/1013-1.jpg</boxart>
-<banner width="760" height="140">graphical/1013-g.jpg</banner><banner width="760" height="140">graphical/1013-g2.jpg</banner><screenshot>
-<original width="900" height="675">screenshots/1013-1.jpg</original>
-<thumb>screenshots/thumb/1013-1.jpg</thumb>
-</screenshot>
-<screenshot>
-<original width="900" height="675">screenshots/1013-2.jpg</original>
-<thumb>screenshots/thumb/1013-2.jpg</thumb>
-</screenshot>
-<screenshot>
-<original width="900" height="675">screenshots/1013-3.jpg</original>
-<thumb>screenshots/thumb/1013-3.jpg</thumb>
-</screenshot>
-<screenshot>
-<original width="900" height="675">screenshots/1013-4.jpg</original>
-<thumb>screenshots/thumb/1013-4.jpg</thumb>
-</screenshot>
-<screenshot>
-<original width="900" height="675">screenshots/1013-5.jpg</original>
-<thumb>screenshots/thumb/1013-5.jpg</thumb>
-</screenshot>
-<screenshot>
-<original width="900" height="675">screenshots/1013-6.jpg</original>
-<thumb>screenshots/thumb/1013-6.jpg</thumb>
-</screenshot>
-<screenshot>
-<original width="900" height="675">screenshots/1013-7.jpg</original>
-<thumb>screenshots/thumb/1013-7.jpg</thumb>
-</screenshot>
-<screenshot>
-<original width="900" height="675">screenshots/1013-8.jpg</original>
-<thumb>screenshots/thumb/1013-8.jpg</thumb>
-</screenshot>
-<clearlogo width="400" height="239">clearlogo/1013.png</clearlogo></Images>
-</Game>
-<Game>
-<id>10651</id>
-<GameTitle>Resident Evil Survivor</GameTitle>
-<AlternateTitles><title>Biohazard Gun Survivor</title></AlternateTitles><PlatformId>10</PlatformId>
-<Platform>Sony Playstation</Platform>
-<ReleaseDate>08/30/2000</ReleaseDate>
-<Overview>First there was Raccoon City…but unknown to the rest of the world, another town is also mutating into a chaotic nightmare from the deadly T-Virus. Attempting to flee the carnage, a solitary helicopter loses control and crash lands in the heart of the chaos. As one lone survivor comes to, the sound of screaming and other monstrous sounds surround him. Dazed and unsure where he is or why he is there, he embarks on a nightmarish adventure where cunning and quick reflexes are the key to survival.
-
-Experience Resident Evil in first-person perspective
-The only game of its kind! Full, free movement – no predestined track
-Surprise elements and hidden secrets entwine with the Resident Evil storyline</Overview>
-<ESRB>M - Mature</ESRB>
-<Genres><genre>Action</genre><genre>Shooter</genre></Genres><Players>1</Players><Co-op>No</Co-op>
-<Publisher>Capcom</Publisher>
-<Developer>Capcom</Developer>
-<Rating>5</Rating><Images>
-<boxart side="back" width="1283" height="1080" thumb="boxart/thumb/original/back/10651-1.jpg">boxart/original/back/10651-1.jpg</boxart>
-<boxart side="front" width="1088" height="1080" thumb="boxart/thumb/original/front/10651-1.jpg">boxart/original/front/10651-1.jpg</boxart>
-<screenshot>
-<original width="900" height="675">screenshots/10651-1.jpg</original>
-<thumb>screenshots/thumb/10651-1.jpg</thumb>
-</screenshot>
-</Images>
-</Game>
-<Game>
-<id>10772</id>
-<GameTitle>Resident Evil Director's Cut</GameTitle>
-<PlatformId>10</PlatformId>
-<Platform>Sony Playstation</Platform>
-<ReleaseDate>09/25/1997</ReleaseDate>
-<Overview>Resident Evil: Director's Cut is a reissue of the original Resident Evil. Unlike Resident Evil for the GameCube, it is not a remake of the original game, instead, it is more of a slight remix.
-
-There are three gameplay modes available. "Original" contains the original game with no changes or additions. "Beginner" features double the amount of ammunition and save ribbons, plus increased health for the player, increased damage for their weapons, and an auto-target feature.
-
-"Arrange" mode is the "Director's Cut" version of the original. The default outfits for Jill, Chris, and Rebecca are changed, new camera angles are introduced, and the placement of key items is changed. Most of these changes are designed to play against the expectations of veteran players of the first Resident Evil - so zombie dogs may smash through new windows, or keys will not be where they were, forcing players to hunt for them anew. The default Beretta pistol is also changed to a chromed version with a randomized chance to kill standard zombies in one shot.
-
-The original release of the Director's Cut advertised an uncut version of the opening cinema, in full color, and never-before seen. Notable aspects of this video include shots of a corpse with bites taken out of the face, close-ups of zombie dogs bleeding when shot, and graphic quick-cuts of Joseph being bitten by these dogs. Chris is also shown smoking in his introduction, which was cut from Western releases. However, only the French and German releases contained this footage. U.S. and UK versions retained the censored black-and-white video shipped with the original release. This has never been corrected, either in the Greatest Hits reissue, or with the PSOne Classics downloads on the Playstation Network.
-
-The original issue of the Director's Cut contained a demo of Resident Evil 2 on a second disc. The "Greatest Hits" re-release added Dual Shock support for the controller (left "movement" stick only).</Overview>
-<ESRB>M - Mature</ESRB>
-<Genres><genre>Action</genre><genre>Adventure</genre><genre>Horror</genre><genre>Shooter</genre></Genres><Players>1</Players><Co-op>No</Co-op>
-<Youtube>http://www.youtube.com/watch?v=CpPm0fAtiz0</Youtube>
-<Publisher>Capcom</Publisher>
-<Developer>Capcom</Developer>
-<Rating>6.5</Rating><Images>
-<boxart side="back" width="1758" height="1560" thumb="boxart/thumb/original/back/10772-1.jpg">boxart/original/back/10772-1.jpg</boxart>
-<boxart side="front" width="1741" height="1560" thumb="boxart/thumb/original/front/10772-1.jpg">boxart/original/front/10772-1.jpg</boxart>
-<screenshot>
-<original width="620" height="465">screenshots/10772-1.jpg</original>
-<thumb>screenshots/thumb/10772-1.jpg</thumb>
-</screenshot>
-<screenshot>
-<original width="620" height="465">screenshots/10772-2.jpg</original>
-<thumb>screenshots/thumb/10772-2.jpg</thumb>
-</screenshot>
-<screenshot>
-<original width="620" height="465">screenshots/10772-3.jpg</original>
-<thumb>screenshots/thumb/10772-3.jpg</thumb>
-</screenshot>
-<screenshot>
-<original width="620" height="465">screenshots/10772-4.jpg</original>
-<thumb>screenshots/thumb/10772-4.jpg</thumb>
-</screenshot>
-<screenshot>
-<original width="620" height="465">screenshots/10772-5.jpg</original>
-<thumb>screenshots/thumb/10772-5.jpg</thumb>
-</screenshot>
-<screenshot>
-<original width="620" height="465">screenshots/10772-6.jpg</original>
-<thumb>screenshots/thumb/10772-6.jpg</thumb>
-</screenshot>
-<screenshot>
-<original width="620" height="465">screenshots/10772-7.jpg</original>
-<thumb>screenshots/thumb/10772-7.jpg</thumb>
-</screenshot>
-<screenshot>
-<original width="620" height="465">screenshots/10772-8.jpg</original>
-<thumb>screenshots/thumb/10772-8.jpg</thumb>
-</screenshot>
-</Images>
-</Game>
-<Game>
-<id>38942</id>
-<GameTitle>Resident Evil 1.5 Battle Coliseum</GameTitle>
-<PlatformId>10</PlatformId>
-<Platform>Sony Playstation</Platform>
-<ReleaseDate>12/15/2015</ReleaseDate>
-<Overview>This is a teaser of a brand new game mode "Battle Coliseum"</Overview>
-<ESRB>M - Mature</ESRB>
-<Genres><genre>Action</genre><genre>Horror</genre></Genres><Players>1</Players><Co-op>No</Co-op>
-<Youtube>http://www.youtube.com/watch?v=wZLeCvVmIiU</Youtube>
-<Publisher>Team IGAS</Publisher>
-<Developer>Team IGAS</Developer>
-<Images>
-<boxart side="front" width="800" height="534" thumb="boxart/thumb/original/front/38942-1.jpg">boxart/original/front/38942-1.jpg</boxart>
-</Images>
-</Game>
-<Game>
-<id>523</id>
-<GameTitle>Evil Zone</GameTitle>
-<PlatformId>10</PlatformId>
-<Platform>Sony Playstation</Platform>
-<ReleaseDate>05/31/1999</ReleaseDate>
-<Overview>Originally released in Japan a few months ago as the tongue-twistingly titled Eretzvaju, Titus has picked up the projectile-based fighter and released it in the States as the hilariously named Evil Zone. An amalgamation of Psychic Force and Destrega, Evil Zone is a projectile-based 3D fighter that adds a dynamic element lacking from most of today's fighting games. Developed by Yuke's, the team behind the successful (in Japan at least) Toukon Retsuden series, and the not so successful Soukaigi (Square's recent action RPG), Evil Zone is a refreshing surprise from a development team not known for fighting games.
-
-The premise in Evil Zone centers around the main character, Danvaizer, a superhero in the mold of classic Japanese afternoon TV shows (a la Power Rangers, Kamen Rider, etc.). While the storyline is truly superfluous, it nevertheless suffices as reason enough to gather Danvaizer and nine other combatants together to do battle in a distinctly different manner than most other fighting games.</Overview>
+<ReleaseDate>10/31/1998</ReleaseDate>
+<Overview>Oddworld: Abe's Exoddus is a 2D platform game very similar to its predecessor both visually and gameplay-wise. Like in the previous game, Abe has to outsmart his foes and avoid obstacles rather than confront them directly. The game is larger than its predecessor and is more oriented towards puzzle-solving, featuring more complex interaction with the Mudokons, who can now be angry, wired, depressed, sick, or blind. The first three problematic conditions can be removed with the appropriate "Gamespeak" command; sick Mudokons must be cured with a special item, while blind ones will follow Abe's voice and may fall to their deaths if Abe doesn't stop them in time.</Overview>
 <ESRB>T - Teen</ESRB>
-<Genres><genre>Fighting</genre></Genres><Players>1</Players><Co-op>No</Co-op>
-<Youtube>http://www.youtube.com/watch?v=HznxJVvMo_k</Youtube>
-<Publisher>Titus Software</Publisher>
-<Developer>Yuke's Future Media Creators</Developer>
-<Rating>10</Rating><Images>
-<boxart side="back" width="1011" height="854" thumb="boxart/thumb/original/back/523-1.jpg">boxart/original/back/523-1.jpg</boxart>
-<boxart side="front" width="1000" height="987" thumb="boxart/thumb/original/front/523-1.jpg">boxart/original/front/523-1.jpg</boxart>
+<Genres><genre>Platform</genre><genre>Puzzle</genre></Genres><Players>2</Players><Co-op>No</Co-op>
+<Youtube>http://www.youtube.com/watch?v=eEx8lxXCsU4</Youtube>
+<Publisher>GT Interactive</Publisher>
+<Developer>Oddworld Inhabitants</Developer>
+<Rating>8.3333</Rating><Similar><SimilarCount>1</SimilarCount><Game><id>9946</id><PlatformId>1</PlatformId></Game></Similar><Images>
+<fanart>
+<original width="1920" height="1080">fanart/original/9429-1.jpg</original>
+<thumb>fanart/thumb/9429-1.jpg</thumb>
+</fanart>
+<fanart>
+<original width="1920" height="1080">fanart/original/9429-2.jpg</original>
+<thumb>fanart/thumb/9429-2.jpg</thumb>
+</fanart>
+<fanart>
+<original width="1920" height="1080">fanart/original/9429-3.jpg</original>
+<thumb>fanart/thumb/9429-3.jpg</thumb>
+</fanart>
+<fanart>
+<original width="1920" height="1080">fanart/original/9429-4.jpg</original>
+<thumb>fanart/thumb/9429-4.jpg</thumb>
+</fanart>
+<fanart>
+<original width="1920" height="1080">fanart/original/9429-5.jpg</original>
+<thumb>fanart/thumb/9429-5.jpg</thumb>
+</fanart>
+<fanart>
+<original width="1920" height="1080">fanart/original/9429-6.jpg</original>
+<thumb>fanart/thumb/9429-6.jpg</thumb>
+</fanart>
+<fanart>
+<original width="1920" height="1080">fanart/original/9429-7.jpg</original>
+<thumb>fanart/thumb/9429-7.jpg</thumb>
+</fanart>
+<fanart>
+<original width="1920" height="1080">fanart/original/9429-8.jpg</original>
+<thumb>fanart/thumb/9429-8.jpg</thumb>
+</fanart>
+<boxart side="back" width="1743" height="1560" thumb="boxart/thumb/original/back/9429-1.jpg">boxart/original/back/9429-1.jpg</boxart>
+<boxart side="front" width="1732" height="1560" thumb="boxart/thumb/original/front/9429-1.jpg">boxart/original/front/9429-1.jpg</boxart>
 <screenshot>
-<original width="800" height="600">screenshots/523-1.jpg</original>
-<thumb>screenshots/thumb/523-1.jpg</thumb>
+<original width="640" height="443">screenshots/9429-1.jpg</original>
+<thumb>screenshots/thumb/9429-1.jpg</thumb>
 </screenshot>
 <screenshot>
-<original width="800" height="600">screenshots/523-2.jpg</original>
-<thumb>screenshots/thumb/523-2.jpg</thumb>
+<original width="640" height="444">screenshots/9429-2.jpg</original>
+<thumb>screenshots/thumb/9429-2.jpg</thumb>
 </screenshot>
 <screenshot>
-<original width="800" height="600">screenshots/523-3.jpg</original>
-<thumb>screenshots/thumb/523-3.jpg</thumb>
+<original width="640" height="443">screenshots/9429-3.jpg</original>
+<thumb>screenshots/thumb/9429-3.jpg</thumb>
 </screenshot>
 <screenshot>
-<original width="800" height="600">screenshots/523-4.jpg</original>
-<thumb>screenshots/thumb/523-4.jpg</thumb>
+<original width="640" height="442">screenshots/9429-4.jpg</original>
+<thumb>screenshots/thumb/9429-4.jpg</thumb>
 </screenshot>
 <screenshot>
-<original width="800" height="600">screenshots/523-5.jpg</original>
-<thumb>screenshots/thumb/523-5.jpg</thumb>
+<original width="640" height="444">screenshots/9429-5.jpg</original>
+<thumb>screenshots/thumb/9429-5.jpg</thumb>
 </screenshot>
 <screenshot>
-<original width="800" height="600">screenshots/523-6.jpg</original>
-<thumb>screenshots/thumb/523-6.jpg</thumb>
+<original width="640" height="440">screenshots/9429-6.jpg</original>
+<thumb>screenshots/thumb/9429-6.jpg</thumb>
 </screenshot>
 <screenshot>
-<original width="800" height="600">screenshots/523-7.jpg</original>
-<thumb>screenshots/thumb/523-7.jpg</thumb>
+<original width="640" height="443">screenshots/9429-7.jpg</original>
+<thumb>screenshots/thumb/9429-7.jpg</thumb>
 </screenshot>
-<screenshot>
-<original width="800" height="600">screenshots/523-8.jpg</original>
-<thumb>screenshots/thumb/523-8.jpg</thumb>
-</screenshot>
-</Images>
+<clearlogo width="400" height="200">clearlogo/9429.png</clearlogo></Images>
 </Game>
 <Game>
-<id>13250</id>
-<GameTitle>Hugo: The Evil Mirror</GameTitle>
+<id>2420</id>
+<GameTitle>Oddworld: Abe's Oddysee</GameTitle>
 <PlatformId>10</PlatformId>
 <Platform>Sony Playstation</Platform>
-<ReleaseDate>07/30/2004</ReleaseDate>
-<Overview>Having just barely survived his previous quest in Black Diamond Fever, Hugo the Troll is back in yet another exciting adventure!
-
-Somewhere in the Tricky Troll forest the evil witch Scylla and her loyal companion Don Croco is trying to figure out a way to capture Hugolina and ruin the Hugo family.
-
-By accident Don Croco drops a tray containing some glasses and when Scylla looks at the broken glass she smiles - she has come up with the perfect evil plan….
-The Evil Mirror
-Scylla surprises the Hugo family in their hut and hit Hugo on the head with a mirror.The mirror does not break but Hugo has been caught in the mirror by an evil spell!
-
-Scylla crushes the mirror and scatters the three mirror pieces throughout the Tricky Troll forest. Hugo has been captured and the only way to save him and to free Hugolina is to find the three mirror pieces.</Overview>
-<ESRB>E - Everyone</ESRB>
-<Co-op>No</Co-op>
-<Publisher>XS Games</Publisher>
-<Developer>ITE Media</Developer>
-<Similar><SimilarCount>1</SimilarCount><Game><id>28159</id><PlatformId>5</PlatformId></Game></Similar><Images>
-<boxart side="back" width="620" height="532" thumb="boxart/thumb/original/back/13250-1.jpg">boxart/original/back/13250-1.jpg</boxart>
-<boxart side="front" width="620" height="612" thumb="boxart/thumb/original/front/13250-1.jpg">boxart/original/front/13250-1.jpg</boxart>
-</Images>
-</Game>
-<Game>
-<id>11699</id>
-<GameTitle>Evil Dead: Hail to the King</GameTitle>
-<PlatformId>10</PlatformId>
-<Platform>Sony Playstation</Platform>
-<ReleaseDate>12/04/2000</ReleaseDate>
-<Overview>Evil Dead: Hail to the King features a mix of action, puzzles, and suspense. Set eight years after the third film, you are Ash, who is being drawn back to the cabin in the woods. So grab your boomstick (shotgun) and chainsaw because it is time to save the world again from the forces of evil. Gameplay allows Ash to attack separately with weapons in both his left and right hands.</Overview>
+<ReleaseDate>09/01/1997</ReleaseDate>
+<Overview>In a lush of diabolical danger where everyone wants to eat you, you're the skinny guy with no weapons. Run, jump, hide, scramble and talk your way past the ugliest bunch of carnivorous crustaceans ever created. Unlock Abe's special powers then figure out your foes, and you might save your race. Don't, and you're dinner! Enter Oddworld's surreal, sensory overload of pure gaming and claim your destiny.</Overview>
 <ESRB>T - Teen</ESRB>
-<Genres><genre>Horror</genre></Genres><Co-op>No</Co-op>
-<Publisher>THQ</Publisher>
-<Developer>Heavy Iron Studios</Developer>
-<Similar><SimilarCount>2</SimilarCount><Game><id>41864</id><PlatformId>1</PlatformId></Game><Game><id>8126</id><PlatformId>16</PlatformId></Game></Similar><Images>
+<Genres><genre>Action</genre><genre>Adventure</genre></Genres><Players>2</Players><Co-op>No</Co-op>
+<Youtube>http://www.youtube.com/watch?v=xM3yDoJUyb0</Youtube>
+<Publisher>GT Interactive Software</Publisher>
+<Developer>Oddworld Inhabitants</Developer>
+<Rating>6.8182</Rating><Similar><SimilarCount>1</SimilarCount><Game><id>8834</id><PlatformId>1</PlatformId></Game></Similar><Images>
 <fanart>
-<original width="1280" height="720">fanart/original/11699-1.jpg</original>
-<thumb>fanart/thumb/11699-1.jpg</thumb>
+<original width="1280" height="720">fanart/original/2420-1.jpg</original>
+<thumb>fanart/thumb/2420-1.jpg</thumb>
 </fanart>
-<boxart side="back" width="765" height="650" thumb="boxart/thumb/original/back/11699-1.jpg">boxart/original/back/11699-1.jpg</boxart>
-<boxart side="front" width="655" height="650" thumb="boxart/thumb/original/front/11699-1.jpg">boxart/original/front/11699-1.jpg</boxart>
-<clearlogo width="400" height="200">clearlogo/11699.png</clearlogo></Images>
-</Game>
-<Game>
-<id>9863</id>
-<GameTitle>Tomba! 2: The Evil Swine Return</GameTitle>
-<PlatformId>10</PlatformId>
-<Platform>Sony Playstation</Platform>
-<ReleaseDate>12/31/1999</ReleaseDate>
-<Overview>TOMBA'S BACK ON THE WILDEST 3D ADVENTURE EVER.
-
-Explore an all new 3D world. Use your trusty fire hammer, ice boomerang or blackjack to turn the evil pigs into bacon. Throw on super-duds like a flying squirrel suit or high speed turbo pants. There's no limit to the stuff you can do.</Overview>
-<ESRB>E - Everyone</ESRB>
-<Genres><genre>Platform</genre></Genres><Players>1</Players><Co-op>No</Co-op>
-<Publisher>Sony</Publisher>
-<Developer>Whoopee Camp</Developer>
-<Rating>6</Rating><Images>
 <fanart>
-<original width="1280" height="720">fanart/original/9863-1.jpg</original>
-<thumb>fanart/thumb/9863-1.jpg</thumb>
+<original width="1280" height="720">fanart/original/2420-2.jpg</original>
+<thumb>fanart/thumb/2420-2.jpg</thumb>
 </fanart>
-<boxart side="back" width="1761" height="1382" thumb="boxart/thumb/original/back/9863-1.jpg">boxart/original/back/9863-1.jpg</boxart>
-<boxart side="front" width="1409" height="1404" thumb="boxart/thumb/original/front/9863-1.jpg">boxart/original/front/9863-1.jpg</boxart>
-</Images>
+<fanart>
+<original width="1280" height="720">fanart/original/2420-3.jpg</original>
+<thumb>fanart/thumb/2420-3.jpg</thumb>
+</fanart>
+<fanart>
+<original width="1920" height="1080">fanart/original/2420-4.jpg</original>
+<thumb>fanart/thumb/2420-4.jpg</thumb>
+</fanart>
+<fanart>
+<original width="1920" height="1080">fanart/original/2420-5.jpg</original>
+<thumb>fanart/thumb/2420-5.jpg</thumb>
+</fanart>
+<fanart>
+<original width="1920" height="1080">fanart/original/2420-6.jpg</original>
+<thumb>fanart/thumb/2420-6.jpg</thumb>
+</fanart>
+<boxart side="back" width="1284" height="1000" thumb="boxart/thumb/original/back/2420-1.jpg">boxart/original/back/2420-1.jpg</boxart>
+<boxart side="front" width="1022" height="1000" thumb="boxart/thumb/original/front/2420-2.jpg">boxart/original/front/2420-2.jpg</boxart>
+<banner width="760" height="140">graphical/2420-g.jpg</banner><clearlogo width="400" height="300">clearlogo/2420.png</clearlogo></Images>
 </Game>
 </Data>

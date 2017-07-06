@@ -34,11 +34,12 @@ public class MainExecutor {
 			for(String s : nombres){
 				System.out.println("consultando para el juego " + s);
 				consulta = get.getGameData(s,fi.getPlatform());
-				ArrayList<Integer> posiciones = buscaCoincidencias(ficheros, s);
-				for(Integer i : posiciones){
-					System.out.println("consultando para el gengame " + s);
-					sb.append(genGameList(consulta,ficheros.get(i), s));
-				}
+//				ArrayList<Integer> posiciones = buscaCoincidencias(ficheros, s);
+				sb.append(genGameList(consulta,s, s));
+//				for(Integer i : posiciones){
+//					System.out.println("consultando para el gengame " + s);
+//					sb.append(genGameList(consulta,ficheros.get(i), s));
+//				}
 			}
 			FileUtils.writeStringToFile(new File("/mnt/seagate/raspberry/roms/psx/gameListJacobo.xml"), sb.toString());
 		} catch (URISyntaxException e) {

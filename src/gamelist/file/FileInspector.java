@@ -27,9 +27,9 @@ public class FileInspector {
 		ArrayList<String> listado = new ArrayList<String>();
 		for(File f : arrayFiles){
 			if(f.isFile() && 
-					(f.getName().endsWith(".bin") || f.getName().endsWith("iso"))){
+					(f.getName().endsWith(".bin") || f.getName().endsWith("iso") || f.getName().endsWith("zip"))){
 				String fname = f.getName();
-				Pattern patron = Pattern.compile("(^[A-Z,a-z,0-9, ,\\-, _, \\',:]*)");
+				Pattern patron = Pattern.compile("(^[A-Z,a-z,0-9, ,\\-, _, \\',:,!,\\&]*)");
 				Matcher match = patron.matcher(fname);
 				if (match.find()){
 					fname = match.group(0);
