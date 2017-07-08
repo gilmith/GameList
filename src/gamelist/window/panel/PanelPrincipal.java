@@ -35,6 +35,9 @@ import javax.swing.event.MenuKeyEvent;
 import javax.swing.JTextArea;
 import javax.swing.JLabel;
 import org.eclipse.wb.swing.FocusTraversalOnArray;
+
+import gamelist.controller.FolderController;
+
 import java.awt.Component;
 import java.awt.FlowLayout;
 import javax.swing.BoxLayout;
@@ -48,6 +51,14 @@ public class PanelPrincipal {
 	private JTextField txtPlataforma;
 	private JTextField txtSeleccionaUnaRom;
 	private JTextField txtSeleccionaUnArchivo;
+	private String rutaRoms; 
+	private JTextField txtPublicadora;
+	private JTextField txtResumen;
+	private JTextField txtGenero;
+	private JTextField txtJugadores;
+	private JTextField txtLanzamiento;
+	private JTextField txtNota;
+	private JTextField txtPortada;
 
 	/**
 	 * Launch the application.
@@ -78,7 +89,7 @@ public class PanelPrincipal {
 	private void initialize() {
 		frmJavaScrapper = new JFrame();
 		frmJavaScrapper.setTitle("Java Scrapper");
-		frmJavaScrapper.setBounds(100, 100, 729, 481);
+		frmJavaScrapper.setBounds(100, 100, 860, 425);
 		frmJavaScrapper.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		JMenuBar menuBar = new JMenuBar();
@@ -121,11 +132,17 @@ public class PanelPrincipal {
 		frmJavaScrapper.getContentPane().add(panelCentral, BorderLayout.CENTER);
 		
 		JTextArea txtrRomsEncontradas = new JTextArea();
-		txtrRomsEncontradas.setText("Roms encontradas");
-		txtrRomsEncontradas.setEditable(false);
+		txtrRomsEncontradas.setLineWrap(true);
+		txtrRomsEncontradas.setWrapStyleWord(true);
+		txtrRomsEncontradas.setToolTipText("Roms encontradas en el autoexplore");
+		txtrRomsEncontradas.setText("    Roms encontradas");
 		txtrRomsEncontradas.setRows(20);
 		txtrRomsEncontradas.setColumns(20);
 		panelCentral.add(txtrRomsEncontradas);
+		
+		JButton btnTodasRoms = new JButton("Ejecutar todas las roms");
+		btnTodasRoms.setToolTipText("ejecutar para todas las roms encontradas");
+		panelCentral.add(btnTodasRoms);
 		
 		JPanel panelOeste = new JPanel();
 		frmJavaScrapper.getContentPane().add(panelOeste, BorderLayout.WEST);
@@ -156,28 +173,9 @@ public class PanelPrincipal {
 		gbc_txtRuta.gridx = 1;
 		gbc_txtRuta.gridy = 0;
 		panelAutoExplorar.add(txtRuta, gbc_txtRuta);
-		txtRuta.addFocusListener(new FocusAdapter() {
-			@Override
-			public void focusGained(FocusEvent arg0) {
-				txtRuta.setText("");
-				txtRuta.repaint();
-				txtRuta.revalidate();
-			}
-		});
 		txtRuta.setToolTipText("Carpeta de las roms");
-		txtRuta.setText("Carpeta de las roms");
 		txtRuta.setColumns(10);
-		txtRuta.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				txtRuta.setText("");
-				txtRuta.repaint();
-				txtRuta.revalidate();
-			}
-		});
-				
-						
-						
+		
 						JButton bttnExplorar = new JButton("Explorar");
 						bttnExplorar.addActionListener(new ActionListener() {
 							public void actionPerformed(ActionEvent e) {
@@ -186,10 +184,11 @@ public class PanelPrincipal {
 								jFileChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
 								int seleccion = jFileChooser.showOpenDialog(frmJavaScrapper);
 								if(seleccion == JFileChooser.APPROVE_OPTION) {
-									System.out.println("Ha dado a aceptar");
 									File f = jFileChooser.getSelectedFile();
 									try {
-										System.out.println(f.getCanonicalPath());
+										rutaRoms = f.getCanonicalPath();
+										txtRuta.setText(rutaRoms);
+										txtRutaGameList.setText(rutaRoms + System.getProperty("file.separator") + "gameList.xml");
 									} catch (IOException e1) {
 										// TODO Auto-generated catch block
 										e1.printStackTrace();
@@ -215,31 +214,22 @@ public class PanelPrincipal {
 				panelAutoExplorar.add(txtRutaGameList, gbc_txtRutaGameList);
 				txtRutaGameList.setToolTipText("Ruta del fichero de gameList.xml");
 				txtRutaGameList.setText("Ruta del fichero de gameList.xml");
-				txtRutaGameList.addMouseListener(new MouseAdapter() {
-					@Override
-					public void mouseClicked(MouseEvent arg0) {
-						txtRutaGameList.setText("");
-						txtRutaGameList.repaint();
-						txtRutaGameList.revalidate();
-					}
-				});
-				txtRutaGameList.addFocusListener(new FocusAdapter() {
-					@Override
-					public void focusGained(FocusEvent e) {
-						txtRutaGameList.setText("");
-						txtRutaGameList.repaint();
-						txtRutaGameList.revalidate();
-					}
-				});
 				txtRutaGameList.setColumns(10);
 				
-				JButton btnNewButton_1 = new JButton("New button");
-				GridBagConstraints gbc_btnNewButton_1 = new GridBagConstraints();
-				gbc_btnNewButton_1.anchor = GridBagConstraints.NORTHWEST;
-				gbc_btnNewButton_1.insets = new Insets(0, 0, 5, 5);
-				gbc_btnNewButton_1.gridx = 4;
-				gbc_btnNewButton_1.gridy = 0;
-				panelAutoExplorar.add(btnNewButton_1, gbc_btnNewButton_1);
+				JButton btnBusquedaFolder = new JButton("Busqueda");
+				btnBusquedaFolder.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent e) {
+						FolderController folderController = new FolderController(rutaRoms);
+						txtrRomsEncontradas.setText(folderController.getAutoExplore());
+						
+					}
+				});
+				btnBusquedaFolder.setToolTipText("Busqueda de roms sobre la carpeta");
+				GridBagConstraints gbc_btnBusquedaFolder = new GridBagConstraints();
+				gbc_btnBusquedaFolder.insets = new Insets(0, 0, 5, 5);
+				gbc_btnBusquedaFolder.gridx = 4;
+				gbc_btnBusquedaFolder.gridy = 0;
+				panelAutoExplorar.add(btnBusquedaFolder, gbc_btnBusquedaFolder);
 				
 				JLabel lblNewLabel = new JLabel("Seleccionar rom");
 				GridBagConstraints gbc_lblNewLabel = new GridBagConstraints();
@@ -258,12 +248,31 @@ public class PanelPrincipal {
 				panelAutoExplorar.add(txtSeleccionaUnaRom, gbc_txtSeleccionaUnaRom);
 				txtSeleccionaUnaRom.setColumns(10);
 				
-				JButton btnNewButton = new JButton("Explorar");
-				GridBagConstraints gbc_btnNewButton = new GridBagConstraints();
-				gbc_btnNewButton.insets = new Insets(0, 0, 0, 5);
-				gbc_btnNewButton.gridx = 2;
-				gbc_btnNewButton.gridy = 1;
-				panelAutoExplorar.add(btnNewButton, gbc_btnNewButton);
+				JButton btnExplorarRomIso = new JButton("Rom/Iso");
+				btnExplorarRomIso.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent e) {
+						JFileChooser jFileChooser = new JFileChooser(System.getProperty("user.dir"));
+						jFileChooser.setDialogTitle("Selecciona carpeta de roms");
+						jFileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+						int seleccion = jFileChooser.showOpenDialog(frmJavaScrapper);
+						if(seleccion == JFileChooser.APPROVE_OPTION) {
+							File f = jFileChooser.getSelectedFile();
+							try {
+								rutaRoms = f.getCanonicalPath();
+								txtRuta.setText(rutaRoms);
+								txtRutaGameList.setText(rutaRoms + System.getProperty("file.separator") + "gameList.xml");
+							} catch (IOException e1) {
+								// TODO Auto-generated catch block
+								e1.printStackTrace();
+							}
+						}
+					}
+				});
+				GridBagConstraints gbc_btnExplorarRomIso = new GridBagConstraints();
+				gbc_btnExplorarRomIso.insets = new Insets(0, 0, 0, 5);
+				gbc_btnExplorarRomIso.gridx = 2;
+				gbc_btnExplorarRomIso.gridy = 1;
+				panelAutoExplorar.add(btnExplorarRomIso, gbc_btnExplorarRomIso);
 				
 				txtSeleccionaUnArchivo = new JTextField();
 				txtSeleccionaUnArchivo.setText("Selecciona un archivo gamesList.xml");
@@ -275,12 +284,13 @@ public class PanelPrincipal {
 				panelAutoExplorar.add(txtSeleccionaUnArchivo, gbc_txtSeleccionaUnArchivo);
 				txtSeleccionaUnArchivo.setColumns(10);
 				
-				JButton btnNewButton_2 = new JButton("New button");
-				GridBagConstraints gbc_btnNewButton_2 = new GridBagConstraints();
-				gbc_btnNewButton_2.insets = new Insets(0, 0, 0, 5);
-				gbc_btnNewButton_2.gridx = 4;
-				gbc_btnNewButton_2.gridy = 1;
-				panelAutoExplorar.add(btnNewButton_2, gbc_btnNewButton_2);
+				JButton btnBusquedaFile = new JButton("Busqueda");
+				btnBusquedaFile.setToolTipText("Busqueda en gamesdb");
+				GridBagConstraints gbc_btnBusquedaFile = new GridBagConstraints();
+				gbc_btnBusquedaFile.insets = new Insets(0, 0, 0, 5);
+				gbc_btnBusquedaFile.gridx = 4;
+				gbc_btnBusquedaFile.gridy = 1;
+				panelAutoExplorar.add(btnBusquedaFile, gbc_btnBusquedaFile);
 				
 				JPanel panelManual = new JPanel();
 				panelOeste.add(panelManual, BorderLayout.CENTER);
@@ -306,6 +316,16 @@ public class PanelPrincipal {
 				panelManual.add(lblTitulo, gbc_lblTitulo);
 				
 				txtTitulo = new JTextField();
+				txtTitulo.addMouseListener(new MouseAdapter() {
+					@Override
+					public void mouseClicked(MouseEvent arg0) {
+						txtTitulo.setText("");
+						txtTitulo.repaint();
+						txtTitulo.revalidate();
+					}
+				});
+				txtTitulo.setToolTipText("Titulo del juego");
+				txtTitulo.setHorizontalAlignment(SwingConstants.CENTER);
 				txtTitulo.setText("Titulo");
 				GridBagConstraints gbc_txtTitulo = new GridBagConstraints();
 				gbc_txtTitulo.fill = GridBagConstraints.HORIZONTAL;
@@ -323,6 +343,16 @@ public class PanelPrincipal {
 				panelManual.add(lblPlataforma, gbc_lblPlataforma);
 				
 				txtPlataforma = new JTextField();
+				txtPlataforma.addMouseListener(new MouseAdapter() {
+					@Override
+					public void mouseClicked(MouseEvent e) {
+						txtPlataforma.setText("");
+						txtPlataforma.repaint();
+						txtPlataforma.revalidate();
+					}
+				});
+				txtPlataforma.setHorizontalAlignment(SwingConstants.CENTER);
+				txtPlataforma.setToolTipText("Plataforma del juego");
 				txtPlataforma.setText("Plataforma");
 				GridBagConstraints gbc_txtPlataforma = new GridBagConstraints();
 				gbc_txtPlataforma.insets = new Insets(0, 0, 5, 5);
@@ -332,7 +362,217 @@ public class PanelPrincipal {
 				panelManual.add(txtPlataforma, gbc_txtPlataforma);
 				txtPlataforma.setColumns(10);
 				
+				JLabel lblPublicadora = new JLabel("Publicadora");
+				GridBagConstraints gbc_lblPublicadora = new GridBagConstraints();
+				gbc_lblPublicadora.insets = new Insets(0, 0, 5, 5);
+				gbc_lblPublicadora.gridx = 0;
+				gbc_lblPublicadora.gridy = 5;
+				panelManual.add(lblPublicadora, gbc_lblPublicadora);
+				
+				txtPublicadora = new JTextField();
+				txtPublicadora.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent e) {
+						txtPublicadora.setText("");
+						txtPublicadora.repaint();
+						txtPublicadora.revalidate();
+					}
+				});
+				txtPublicadora.setHorizontalAlignment(SwingConstants.CENTER);
+				txtPublicadora.setText("Publicadora");
+				GridBagConstraints gbc_txtPublicadora = new GridBagConstraints();
+				gbc_txtPublicadora.insets = new Insets(0, 0, 5, 5);
+				gbc_txtPublicadora.fill = GridBagConstraints.HORIZONTAL;
+				gbc_txtPublicadora.gridx = 1;
+				gbc_txtPublicadora.gridy = 5;
+				panelManual.add(txtPublicadora, gbc_txtPublicadora);
+				txtPublicadora.setColumns(10);
+				
+				JLabel lblResumen = new JLabel("Resumen");
+				GridBagConstraints gbc_lblResumen = new GridBagConstraints();
+				gbc_lblResumen.insets = new Insets(0, 0, 5, 5);
+				gbc_lblResumen.gridx = 0;
+				gbc_lblResumen.gridy = 6;
+				panelManual.add(lblResumen, gbc_lblResumen);
+				
+				txtResumen = new JTextField();
+				txtResumen.addMouseListener(new MouseAdapter() {
+					@Override
+					public void mouseClicked(MouseEvent e) {
+						txtResumen.setText("");
+						txtResumen.repaint();
+						txtResumen.revalidate();
+					}
+				});
+				txtResumen.setHorizontalAlignment(SwingConstants.CENTER);
+				txtResumen.setText("Resumen");
+				GridBagConstraints gbc_txtResumen = new GridBagConstraints();
+				gbc_txtResumen.insets = new Insets(0, 0, 5, 5);
+				gbc_txtResumen.fill = GridBagConstraints.HORIZONTAL;
+				gbc_txtResumen.gridx = 1;
+				gbc_txtResumen.gridy = 6;
+				panelManual.add(txtResumen, gbc_txtResumen);
+				txtResumen.setColumns(10);
+				
+				JLabel lblGenero = new JLabel("Genero");
+				GridBagConstraints gbc_lblGenero = new GridBagConstraints();
+				gbc_lblGenero.insets = new Insets(0, 0, 5, 5);
+				gbc_lblGenero.gridx = 0;
+				gbc_lblGenero.gridy = 7;
+				panelManual.add(lblGenero, gbc_lblGenero);
+				
+				txtGenero = new JTextField();
+				txtGenero.addMouseListener(new MouseAdapter() {
+					@Override
+					public void mouseClicked(MouseEvent e) {
+						txtGenero.setText("");
+						txtGenero.repaint();
+						txtGenero.revalidate();
+					}
+				});
+				txtGenero.setHorizontalAlignment(SwingConstants.CENTER);
+				txtGenero.setText("Genero");
+				GridBagConstraints gbc_txtGenero = new GridBagConstraints();
+				gbc_txtGenero.insets = new Insets(0, 0, 5, 5);
+				gbc_txtGenero.fill = GridBagConstraints.HORIZONTAL;
+				gbc_txtGenero.gridx = 1;
+				gbc_txtGenero.gridy = 7;
+				panelManual.add(txtGenero, gbc_txtGenero);
+				txtGenero.setColumns(10);
+				
+				JLabel lblJugadores = new JLabel("Jugadores");
+				GridBagConstraints gbc_lblJugadores = new GridBagConstraints();
+				gbc_lblJugadores.insets = new Insets(0, 0, 5, 5);
+				gbc_lblJugadores.gridx = 0;
+				gbc_lblJugadores.gridy = 8;
+				panelManual.add(lblJugadores, gbc_lblJugadores);
+				
+				txtJugadores = new JTextField();
+				txtJugadores.addMouseListener(new MouseAdapter() {
+					@Override
+					public void mouseClicked(MouseEvent e) {
+						txtJugadores.setText("");
+						txtJugadores.repaint();
+						txtJugadores.revalidate();
+					}
+				});
+				txtJugadores.setHorizontalAlignment(SwingConstants.CENTER);
+				txtJugadores.setText("Jugadores");
+				GridBagConstraints gbc_txtJugadores = new GridBagConstraints();
+				gbc_txtJugadores.insets = new Insets(0, 0, 5, 5);
+				gbc_txtJugadores.fill = GridBagConstraints.HORIZONTAL;
+				gbc_txtJugadores.gridx = 1;
+				gbc_txtJugadores.gridy = 8;
+				panelManual.add(txtJugadores, gbc_txtJugadores);
+				txtJugadores.setColumns(10);
+				
+				JLabel lblLanzamiento = new JLabel("Lanzamiento");
+				GridBagConstraints gbc_lblLanzamiento = new GridBagConstraints();
+				gbc_lblLanzamiento.insets = new Insets(0, 0, 5, 5);
+				gbc_lblLanzamiento.gridx = 0;
+				gbc_lblLanzamiento.gridy = 9;
+				panelManual.add(lblLanzamiento, gbc_lblLanzamiento);
+				
+				txtLanzamiento = new JTextField();
+				txtLanzamiento.addMouseListener(new MouseAdapter() {
+					@Override
+					public void mouseClicked(MouseEvent e) {
+						txtLanzamiento.setText("");
+						txtLanzamiento.repaint();
+						txtLanzamiento.revalidate();
+					}
+				});
+				txtLanzamiento.setHorizontalAlignment(SwingConstants.CENTER);
+				txtLanzamiento.setText("Lanzamiento");
+				GridBagConstraints gbc_txtLanzamiento = new GridBagConstraints();
+				gbc_txtLanzamiento.insets = new Insets(0, 0, 5, 5);
+				gbc_txtLanzamiento.fill = GridBagConstraints.HORIZONTAL;
+				gbc_txtLanzamiento.gridx = 1;
+				gbc_txtLanzamiento.gridy = 9;
+				panelManual.add(txtLanzamiento, gbc_txtLanzamiento);
+				txtLanzamiento.setColumns(10);
+				
+				JLabel lblNota = new JLabel("Nota");
+				GridBagConstraints gbc_lblNota = new GridBagConstraints();
+				gbc_lblNota.insets = new Insets(0, 0, 5, 5);
+				gbc_lblNota.gridx = 0;
+				gbc_lblNota.gridy = 10;
+				panelManual.add(lblNota, gbc_lblNota);
+				
+				txtNota = new JTextField();
+				txtNota.addMouseListener(new MouseAdapter() {
+					@Override
+					public void mouseClicked(MouseEvent e) {
+						txtNota.setText("");
+						txtNota.repaint();
+						txtNota.revalidate();
+					}
+				});
+				txtNota.setHorizontalAlignment(SwingConstants.CENTER);
+				txtNota.setText("Nota");
+				GridBagConstraints gbc_txtNota = new GridBagConstraints();
+				gbc_txtNota.insets = new Insets(0, 0, 5, 5);
+				gbc_txtNota.fill = GridBagConstraints.HORIZONTAL;
+				gbc_txtNota.gridx = 1;
+				gbc_txtNota.gridy = 10;
+				panelManual.add(txtNota, gbc_txtNota);
+				txtNota.setColumns(10);
+				
+				JLabel lblPortada = new JLabel("Portada");
+				GridBagConstraints gbc_lblPortada = new GridBagConstraints();
+				gbc_lblPortada.insets = new Insets(0, 0, 5, 5);
+				gbc_lblPortada.gridx = 0;
+				gbc_lblPortada.gridy = 11;
+				panelManual.add(lblPortada, gbc_lblPortada);
+				
+				txtPortada = new JTextField();
+				txtPortada.addMouseListener(new MouseAdapter() {
+					@Override
+					public void mouseClicked(MouseEvent e) {
+						txtPortada.setText("");
+						txtPortada.repaint();
+						txtPortada.revalidate();
+					}
+				});
+				txtPortada.setHorizontalAlignment(SwingConstants.CENTER);
+				txtPortada.setText("Portada");
+				GridBagConstraints gbc_txtPortada = new GridBagConstraints();
+				gbc_txtPortada.insets = new Insets(0, 0, 5, 5);
+				gbc_txtPortada.fill = GridBagConstraints.HORIZONTAL;
+				gbc_txtPortada.gridx = 1;
+				gbc_txtPortada.gridy = 11;
+				panelManual.add(txtPortada, gbc_txtPortada);
+				txtPortada.setColumns(10);
+				
+				JButton btnExplorar = new JButton("Explorar");
+				btnExplorar.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent e) {
+						JFileChooser jFileChooser = new JFileChooser(System.getProperty("user.dir"));
+						jFileChooser.setDialogTitle("Selecciona carpeta de roms");
+						jFileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+						int seleccion = jFileChooser.showOpenDialog(frmJavaScrapper);
+						if(seleccion == JFileChooser.APPROVE_OPTION) {
+							File f = jFileChooser.getSelectedFile();
+							try {
+								String rutaPortada = null;
+								rutaPortada = f.getCanonicalPath();
+								txtPortada.setText(rutaPortada);
+								txtPortada.setText(rutaPortada);
+							} catch (IOException e1) {
+								// TODO Auto-generated catch block
+								e1.printStackTrace();
+							}
+						}
+					}
+				});
+
+				GridBagConstraints gbc_btnExplorar = new GridBagConstraints();
+				gbc_btnExplorar.insets = new Insets(0, 0, 5, 0);
+				gbc_btnExplorar.gridx = 2;
+				gbc_btnExplorar.gridy = 11;
+				panelManual.add(btnExplorar, gbc_btnExplorar);
+				
 				JButton btnEjecutar = new JButton("Ejecutar");
+				btnEjecutar.setToolTipText("ejecutar para una rom individual");
 				GridBagConstraints gbc_btnEjecutar = new GridBagConstraints();
 				gbc_btnEjecutar.insets = new Insets(0, 0, 0, 5);
 				gbc_btnEjecutar.gridx = 1;

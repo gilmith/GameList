@@ -39,7 +39,12 @@ public class FileInspector {
 					listado.add(fname);
 				}
 			} else if (!f.isFile()){
-				platform = f.getAbsolutePath().split("/")[5];
+				if (System.getProperty("os.name").contains("Windows")) {
+					//cambiar el 3
+					platform = f.getAbsolutePath().split("\\\\")[3];
+				} else {
+					platform = f.getAbsolutePath().split("/")[3];
+				}
 			}
 		}
 		return listado;
