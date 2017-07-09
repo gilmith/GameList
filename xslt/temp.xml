@@ -3,97 +3,28 @@
 <Data>
 <baseImgUrl>http://thegamesdb.net/banners/</baseImgUrl>
 <Game>
-<id>495</id>
-<GameTitle>Alundra</GameTitle>
-<PlatformId>10</PlatformId>
-<Platform>Sony Playstation</Platform>
-<ReleaseDate>12/31/1997</ReleaseDate>
-<Overview>Between the worlds of light and dark lies the world of dram. A world where the rule of reason loosens its grip. A place where an insidious evil is stealing minds and blackening the hearts of those from the world of light. Grab a weapon and become the dreamwalker Alundra as he struggles to purge the evil Id of an ancient world before it falls to ash.
+<id>5120</id>
+<GameTitle>Wolfchild</GameTitle>
+<PlatformId>21</PlatformId>
+<Platform>Sega CD</Platform>
+<ReleaseDate>01/01/1993</ReleaseDate>
+<Overview>The world's most renowned biogenetic scientist has been kidnapped and brainwashed into creating an army of bloodthirsty mutant warriors.
 
-Explore dungeons, find monster butt as you weave between tense reality and nightmarish dreams to save the hapless masses. With a wide cast of characters and scores of challenging puzzles created by the people responsible for Landstalker on the Genesis. Alundra will rob you of precious sleep until you finish.</Overview>
-<ESRB>T - Teen</ESRB>
-<Genres><genre>Action</genre><genre>Adventure</genre><genre>Role-Playing</genre></Genres><Players>1</Players><Co-op>No</Co-op>
-<Publisher>Working Designs</Publisher>
-<Developer>Matrix Software</Developer>
-<Rating>6.5</Rating><Images>
-<fanart>
-<original width="1280" height="720">fanart/original/495-1.jpg</original>
-<thumb>fanart/thumb/495-1.jpg</thumb>
-</fanart>
-<fanart>
-<original width="1280" height="720">fanart/original/495-2.jpg</original>
-<thumb>fanart/thumb/495-2.jpg</thumb>
-</fanart>
-<fanart>
-<original width="1280" height="720">fanart/original/495-3.jpg</original>
-<thumb>fanart/thumb/495-3.jpg</thumb>
-</fanart>
-<boxart side="back" width="1743" height="1560" thumb="boxart/thumb/original/back/495-1.jpg">boxart/original/back/495-1.jpg</boxart>
-<boxart side="front" width="984" height="998" thumb="boxart/thumb/original/front/495-1.png">boxart/original/front/495-1.png</boxart>
-<screenshot>
-<original width="320" height="240">screenshots/495-1.jpg</original>
-<thumb>screenshots/thumb/495-1.jpg</thumb>
-</screenshot>
-<screenshot>
-<original width="320" height="240">screenshots/495-2.jpg</original>
-<thumb>screenshots/thumb/495-2.jpg</thumb>
-</screenshot>
-<screenshot>
-<original width="320" height="240">screenshots/495-3.jpg</original>
-<thumb>screenshots/thumb/495-3.jpg</thumb>
-</screenshot>
-<screenshot>
-<original width="320" height="240">screenshots/495-4.jpg</original>
-<thumb>screenshots/thumb/495-4.jpg</thumb>
-</screenshot>
-<screenshot>
-<original width="320" height="240">screenshots/495-5.jpg</original>
-<thumb>screenshots/thumb/495-5.jpg</thumb>
-</screenshot>
-<screenshot>
-<original width="320" height="240">screenshots/495-6.jpg</original>
-<thumb>screenshots/thumb/495-6.jpg</thumb>
-</screenshot>
-<clearlogo width="400" height="209">clearlogo/495.png</clearlogo></Images>
-</Game>
-<Game>
-<id>1540</id>
-<GameTitle>Alundra 2</GameTitle>
-<PlatformId>10</PlatformId>
-<Platform>Sony Playstation</Platform>
-<ReleaseDate>02/29/2000</ReleaseDate>
-<Overview>You are Flint, a renegade swordsman on a quest to free a kingdom from the grip of a sinister ruler. Through a land of hidden danger you wield your weapon, navigating an intricate story wrought with bizarre characters, brain-twisting puzzles and wild games. Beware! An even greater evil is about to be revealed...</Overview>
-<ESRB>T - Teen</ESRB>
-<Genres><genre>Action</genre><genre>Role-Playing</genre></Genres><Players>1</Players><Co-op>No</Co-op>
-<Publisher>Activision</Publisher>
-<Developer>Matrix Software</Developer>
-<Rating>6</Rating><Images>
-<fanart>
-<original width="1280" height="720">fanart/original/1540-1.jpg</original>
-<thumb>fanart/thumb/1540-1.jpg</thumb>
-</fanart>
-<fanart>
-<original width="1280" height="720">fanart/original/1540-2.jpg</original>
-<thumb>fanart/thumb/1540-2.jpg</thumb>
-</fanart>
-<fanart>
-<original width="1280" height="720">fanart/original/1540-3.jpg</original>
-<thumb>fanart/thumb/1540-3.jpg</thumb>
-</fanart>
-<fanart>
-<original width="1280" height="720">fanart/original/1540-4.jpg</original>
-<thumb>fanart/thumb/1540-4.jpg</thumb>
-</fanart>
-<fanart>
-<original width="1280" height="720">fanart/original/1540-5.jpg</original>
-<thumb>fanart/thumb/1540-5.jpg</thumb>
-</fanart>
-<fanart>
-<original width="1280" height="720">fanart/original/1540-6.jpg</original>
-<thumb>fanart/thumb/1540-6.jpg</thumb>
-</fanart>
-<boxart side="back" width="2153" height="1838" thumb="boxart/thumb/original/back/1540-1.jpg">boxart/original/back/1540-1.jpg</boxart>
-<boxart side="front" width="645" height="650" thumb="boxart/thumb/original/front/1540-1.jpg">boxart/original/front/1540-1.jpg</boxart>
-<clearlogo width="400" height="151">clearlogo/1540.png</clearlogo></Images>
+Suddenly the fate of all mankind rests in the hands of his youngest son... and a top-secret mutating experiment known as "Project Wolfchild."
+
+-10 freaky levels filled with mind-blowing mazes, brain twisting puzzles and against all-odds combat action.
+
+-CD-quality graphics and a rockin' stereo soundtrack
+
+-Grusome cast of unrelenting schitzoid mutants, each with the power to destroy
+
+-Fully animated introduction sequence</Overview>
+<Genres><genre>Action</genre></Genres><Players>1</Players><Co-op>No</Co-op>
+<Publisher>JVC</Publisher>
+<Developer>Core Design</Developer>
+<Rating>5</Rating><Similar><SimilarCount>5</SimilarCount><Game><id>35734</id><PlatformId>4911</PlatformId></Game><Game><id>25338</id><PlatformId>20</PlatformId></Game><Game><id>4731</id><PlatformId>18</PlatformId></Game><Game><id>3105</id><PlatformId>35</PlatformId></Game><Game><id>2674</id><PlatformId>6</PlatformId></Game></Similar><Images>
+<boxart side="back" width="1530" height="2156" thumb="boxart/thumb/original/back/5120-1.jpg">boxart/original/back/5120-1.jpg</boxart>
+<boxart side="front" width="1539" height="2156" thumb="boxart/thumb/original/front/5120-1.jpg">boxart/original/front/5120-1.jpg</boxart>
+<clearlogo width="400" height="137">clearlogo/5120.png</clearlogo></Images>
 </Game>
 </Data>

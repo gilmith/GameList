@@ -36,22 +36,32 @@ public class Get {
 		properties = new Properties();
 	}
 	
-	public String getGameList(String name, String platform) throws URISyntaxException{
-		String respuesta = null;
-		setProperties(properties);
-		ResponseHandler<String> respuestaHandler = new BasicResponseHandler();
-		URI uri = new URI(getURI(name, properties.getProperty(platform), URLGETGAMELIST));
-		httpGet.setURI(uri);
+	public void downloadImagen(String portada, String portdaSplitted) throws MalformedURLException, IOException{
+		URL url = new URL("http://thegamesdb.net/banners/" + portada);
+		URLConnection uc = url.openConnection();
+		uc.addRequestProperty("User-Agent", 
+				"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)");
+		InputStream in = uc.getInputStream();
 		try {
-			respuesta = httpClient.execute(httpGet, respuestaHandler);
-		} catch (ClientProtocolException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			Files.copy(in, Paths.get("/mnt/seagate/raspberry/roms/psx/downloaded_images/" + 
+					portdaSplitted));
+		} catch(FileAlreadyExistsException faex){
+			System.out.println("Portada ya descargada, juego multidisco");
 		}
-		return respuesta; 
+	}
+	
+	public void downloadImagen(String portada, String portdaSplitted, String rutaRoms) throws MalformedURLException, IOException{
+		URL url = new URL("http://thegamesdb.net/banners/" + portada);
+		URLConnection uc = url.openConnection();
+		uc.addRequestProperty("User-Agent", 
+				"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)");
+		InputStream in = uc.getInputStream();
+		try {
+			Files.copy(in, Paths.get(rutaRoms + System.getProperty("file.separator") + "downloaded_images" + 
+					System.getProperty("file.separator") + portdaSplitted));
+		} catch(FileAlreadyExistsException faex){
+			System.out.println("Portada ya descargada, juego multidisco");
+		}
 	}
 	
 	
@@ -95,11 +105,22 @@ public class Get {
 	}
 	
 	
-	private String getURI(String name, String platform, String uri){
-		String initURI = uri;
-		initURI = initURI.replaceFirst("#1", name);
-		initURI = initURI.replaceFirst("#2", platform);
-		return initURI;
+	public String getGameList(String name, String platform) throws URISyntaxException{
+		String respuesta = null;
+		setProperties(properties);
+		ResponseHandler<String> respuestaHandler = new BasicResponseHandler();
+		URI uri = new URI(getURI(name, properties.getProperty(platform), URLGETGAMELIST));
+		httpGet.setURI(uri);
+		try {
+			respuesta = httpClient.execute(httpGet, respuestaHandler);
+		} catch (ClientProtocolException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return respuesta; 
 	}
 	
 	private String getURI(String name, String uri){
@@ -109,30 +130,11 @@ public class Get {
 		return sb.toString();
 	}
 	
-	private void setProperties(Properties properties){
-		File file = new File("properties//translate.properties");
-		try {
-			FileInputStream fis = new FileInputStream(file);
-			properties.load(fis);
-			fis.close();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
-	
-	public void downloadImagen(String portada, String portdaSplitted) throws MalformedURLException, IOException{
-		URL url = new URL("http://thegamesdb.net/banners/" + portada);
-		URLConnection uc = url.openConnection();
-		uc.addRequestProperty("User-Agent", 
-				"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)");
-		InputStream in = uc.getInputStream();
-		try {
-			Files.copy(in, Paths.get("/mnt/seagate/raspberry/roms/psx/downloaded_images/" + 
-					portdaSplitted));
-		} catch(FileAlreadyExistsException faex){
-			System.out.println("Portada ya descargada, juego multidisco");
-		}
+	private String getURI(String name, String platform, String uri){
+		String initURI = uri;
+		initURI = initURI.replaceFirst("#1", name);
+		initURI = initURI.replaceFirst("#2", platform);
+		return initURI;
 	}
 	
 	private String replacesName(String name){
@@ -148,6 +150,18 @@ public class Get {
 			return nname;
 		}
 		return name;
+	}
+	
+	private void setProperties(Properties properties){
+		File file = new File("properties//translate.properties");
+		try {
+			FileInputStream fis = new FileInputStream(file);
+			properties.load(fis);
+			fis.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }

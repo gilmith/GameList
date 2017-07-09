@@ -579,7 +579,7 @@ public class PanelPrincipal {
 				btnEjecutar.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						GamesDBController gamesDBController = new GamesDBController();
-						gamesDBController.procesa(folderController, rutaRoms + System.getProperty("file.separator" + "gamesList.xml"));
+						gamesDBController.procesa(folderController, rutaRoms + System.getProperty("file.separator") + "gamesList.xml", rutaRoms);
 					}
 				});
 				btnEjecutar.setToolTipText("ejecutar para una rom individual");
