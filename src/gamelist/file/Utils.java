@@ -13,8 +13,8 @@ public class Utils {
 	private static Log log = LogFactory.getLog(Utils.class);
 	
 	
-	public static File string2File(String string){
-		File file = new File("/home/jake/workspace/GameList/xslt/temp.xml");
+	public static File string2File(String string, String ruta){
+		File file = new File(ruta);
 		try {
 			FileUtils.write(file, string, "UTF-8", false);
 		} catch (IOException e) {

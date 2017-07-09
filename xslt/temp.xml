@@ -3,121 +3,97 @@
 <Data>
 <baseImgUrl>http://thegamesdb.net/banners/</baseImgUrl>
 <Game>
-<id>9429</id>
-<GameTitle>Oddworld: Abe's Exoddus</GameTitle>
+<id>495</id>
+<GameTitle>Alundra</GameTitle>
 <PlatformId>10</PlatformId>
 <Platform>Sony Playstation</Platform>
-<ReleaseDate>10/31/1998</ReleaseDate>
-<Overview>Oddworld: Abe's Exoddus is a 2D platform game very similar to its predecessor both visually and gameplay-wise. Like in the previous game, Abe has to outsmart his foes and avoid obstacles rather than confront them directly. The game is larger than its predecessor and is more oriented towards puzzle-solving, featuring more complex interaction with the Mudokons, who can now be angry, wired, depressed, sick, or blind. The first three problematic conditions can be removed with the appropriate "Gamespeak" command; sick Mudokons must be cured with a special item, while blind ones will follow Abe's voice and may fall to their deaths if Abe doesn't stop them in time.</Overview>
+<ReleaseDate>12/31/1997</ReleaseDate>
+<Overview>Between the worlds of light and dark lies the world of dram. A world where the rule of reason loosens its grip. A place where an insidious evil is stealing minds and blackening the hearts of those from the world of light. Grab a weapon and become the dreamwalker Alundra as he struggles to purge the evil Id of an ancient world before it falls to ash.
+
+Explore dungeons, find monster butt as you weave between tense reality and nightmarish dreams to save the hapless masses. With a wide cast of characters and scores of challenging puzzles created by the people responsible for Landstalker on the Genesis. Alundra will rob you of precious sleep until you finish.</Overview>
 <ESRB>T - Teen</ESRB>
-<Genres><genre>Platform</genre><genre>Puzzle</genre></Genres><Players>2</Players><Co-op>No</Co-op>
-<Youtube>http://www.youtube.com/watch?v=eEx8lxXCsU4</Youtube>
-<Publisher>GT Interactive</Publisher>
-<Developer>Oddworld Inhabitants</Developer>
-<Rating>8.3333</Rating><Similar><SimilarCount>1</SimilarCount><Game><id>9946</id><PlatformId>1</PlatformId></Game></Similar><Images>
+<Genres><genre>Action</genre><genre>Adventure</genre><genre>Role-Playing</genre></Genres><Players>1</Players><Co-op>No</Co-op>
+<Publisher>Working Designs</Publisher>
+<Developer>Matrix Software</Developer>
+<Rating>6.5</Rating><Images>
 <fanart>
-<original width="1920" height="1080">fanart/original/9429-1.jpg</original>
-<thumb>fanart/thumb/9429-1.jpg</thumb>
+<original width="1280" height="720">fanart/original/495-1.jpg</original>
+<thumb>fanart/thumb/495-1.jpg</thumb>
 </fanart>
 <fanart>
-<original width="1920" height="1080">fanart/original/9429-2.jpg</original>
-<thumb>fanart/thumb/9429-2.jpg</thumb>
+<original width="1280" height="720">fanart/original/495-2.jpg</original>
+<thumb>fanart/thumb/495-2.jpg</thumb>
 </fanart>
 <fanart>
-<original width="1920" height="1080">fanart/original/9429-3.jpg</original>
-<thumb>fanart/thumb/9429-3.jpg</thumb>
+<original width="1280" height="720">fanart/original/495-3.jpg</original>
+<thumb>fanart/thumb/495-3.jpg</thumb>
 </fanart>
-<fanart>
-<original width="1920" height="1080">fanart/original/9429-4.jpg</original>
-<thumb>fanart/thumb/9429-4.jpg</thumb>
-</fanart>
-<fanart>
-<original width="1920" height="1080">fanart/original/9429-5.jpg</original>
-<thumb>fanart/thumb/9429-5.jpg</thumb>
-</fanart>
-<fanart>
-<original width="1920" height="1080">fanart/original/9429-6.jpg</original>
-<thumb>fanart/thumb/9429-6.jpg</thumb>
-</fanart>
-<fanart>
-<original width="1920" height="1080">fanart/original/9429-7.jpg</original>
-<thumb>fanart/thumb/9429-7.jpg</thumb>
-</fanart>
-<fanart>
-<original width="1920" height="1080">fanart/original/9429-8.jpg</original>
-<thumb>fanart/thumb/9429-8.jpg</thumb>
-</fanart>
-<boxart side="back" width="1743" height="1560" thumb="boxart/thumb/original/back/9429-1.jpg">boxart/original/back/9429-1.jpg</boxart>
-<boxart side="front" width="1732" height="1560" thumb="boxart/thumb/original/front/9429-1.jpg">boxart/original/front/9429-1.jpg</boxart>
+<boxart side="back" width="1743" height="1560" thumb="boxart/thumb/original/back/495-1.jpg">boxart/original/back/495-1.jpg</boxart>
+<boxart side="front" width="984" height="998" thumb="boxart/thumb/original/front/495-1.png">boxart/original/front/495-1.png</boxart>
 <screenshot>
-<original width="640" height="443">screenshots/9429-1.jpg</original>
-<thumb>screenshots/thumb/9429-1.jpg</thumb>
+<original width="320" height="240">screenshots/495-1.jpg</original>
+<thumb>screenshots/thumb/495-1.jpg</thumb>
 </screenshot>
 <screenshot>
-<original width="640" height="444">screenshots/9429-2.jpg</original>
-<thumb>screenshots/thumb/9429-2.jpg</thumb>
+<original width="320" height="240">screenshots/495-2.jpg</original>
+<thumb>screenshots/thumb/495-2.jpg</thumb>
 </screenshot>
 <screenshot>
-<original width="640" height="443">screenshots/9429-3.jpg</original>
-<thumb>screenshots/thumb/9429-3.jpg</thumb>
+<original width="320" height="240">screenshots/495-3.jpg</original>
+<thumb>screenshots/thumb/495-3.jpg</thumb>
 </screenshot>
 <screenshot>
-<original width="640" height="442">screenshots/9429-4.jpg</original>
-<thumb>screenshots/thumb/9429-4.jpg</thumb>
+<original width="320" height="240">screenshots/495-4.jpg</original>
+<thumb>screenshots/thumb/495-4.jpg</thumb>
 </screenshot>
 <screenshot>
-<original width="640" height="444">screenshots/9429-5.jpg</original>
-<thumb>screenshots/thumb/9429-5.jpg</thumb>
+<original width="320" height="240">screenshots/495-5.jpg</original>
+<thumb>screenshots/thumb/495-5.jpg</thumb>
 </screenshot>
 <screenshot>
-<original width="640" height="440">screenshots/9429-6.jpg</original>
-<thumb>screenshots/thumb/9429-6.jpg</thumb>
+<original width="320" height="240">screenshots/495-6.jpg</original>
+<thumb>screenshots/thumb/495-6.jpg</thumb>
 </screenshot>
-<screenshot>
-<original width="640" height="443">screenshots/9429-7.jpg</original>
-<thumb>screenshots/thumb/9429-7.jpg</thumb>
-</screenshot>
-<clearlogo width="400" height="200">clearlogo/9429.png</clearlogo></Images>
+<clearlogo width="400" height="209">clearlogo/495.png</clearlogo></Images>
 </Game>
 <Game>
-<id>2420</id>
-<GameTitle>Oddworld: Abe's Oddysee</GameTitle>
+<id>1540</id>
+<GameTitle>Alundra 2</GameTitle>
 <PlatformId>10</PlatformId>
 <Platform>Sony Playstation</Platform>
-<ReleaseDate>09/01/1997</ReleaseDate>
-<Overview>In a lush of diabolical danger where everyone wants to eat you, you're the skinny guy with no weapons. Run, jump, hide, scramble and talk your way past the ugliest bunch of carnivorous crustaceans ever created. Unlock Abe's special powers then figure out your foes, and you might save your race. Don't, and you're dinner! Enter Oddworld's surreal, sensory overload of pure gaming and claim your destiny.</Overview>
+<ReleaseDate>02/29/2000</ReleaseDate>
+<Overview>You are Flint, a renegade swordsman on a quest to free a kingdom from the grip of a sinister ruler. Through a land of hidden danger you wield your weapon, navigating an intricate story wrought with bizarre characters, brain-twisting puzzles and wild games. Beware! An even greater evil is about to be revealed...</Overview>
 <ESRB>T - Teen</ESRB>
-<Genres><genre>Action</genre><genre>Adventure</genre></Genres><Players>2</Players><Co-op>No</Co-op>
-<Youtube>http://www.youtube.com/watch?v=xM3yDoJUyb0</Youtube>
-<Publisher>GT Interactive Software</Publisher>
-<Developer>Oddworld Inhabitants</Developer>
-<Rating>6.8182</Rating><Similar><SimilarCount>1</SimilarCount><Game><id>8834</id><PlatformId>1</PlatformId></Game></Similar><Images>
+<Genres><genre>Action</genre><genre>Role-Playing</genre></Genres><Players>1</Players><Co-op>No</Co-op>
+<Publisher>Activision</Publisher>
+<Developer>Matrix Software</Developer>
+<Rating>6</Rating><Images>
 <fanart>
-<original width="1280" height="720">fanart/original/2420-1.jpg</original>
-<thumb>fanart/thumb/2420-1.jpg</thumb>
+<original width="1280" height="720">fanart/original/1540-1.jpg</original>
+<thumb>fanart/thumb/1540-1.jpg</thumb>
 </fanart>
 <fanart>
-<original width="1280" height="720">fanart/original/2420-2.jpg</original>
-<thumb>fanart/thumb/2420-2.jpg</thumb>
+<original width="1280" height="720">fanart/original/1540-2.jpg</original>
+<thumb>fanart/thumb/1540-2.jpg</thumb>
 </fanart>
 <fanart>
-<original width="1280" height="720">fanart/original/2420-3.jpg</original>
-<thumb>fanart/thumb/2420-3.jpg</thumb>
+<original width="1280" height="720">fanart/original/1540-3.jpg</original>
+<thumb>fanart/thumb/1540-3.jpg</thumb>
 </fanart>
 <fanart>
-<original width="1920" height="1080">fanart/original/2420-4.jpg</original>
-<thumb>fanart/thumb/2420-4.jpg</thumb>
+<original width="1280" height="720">fanart/original/1540-4.jpg</original>
+<thumb>fanart/thumb/1540-4.jpg</thumb>
 </fanart>
 <fanart>
-<original width="1920" height="1080">fanart/original/2420-5.jpg</original>
-<thumb>fanart/thumb/2420-5.jpg</thumb>
+<original width="1280" height="720">fanart/original/1540-5.jpg</original>
+<thumb>fanart/thumb/1540-5.jpg</thumb>
 </fanart>
 <fanart>
-<original width="1920" height="1080">fanart/original/2420-6.jpg</original>
-<thumb>fanart/thumb/2420-6.jpg</thumb>
+<original width="1280" height="720">fanart/original/1540-6.jpg</original>
+<thumb>fanart/thumb/1540-6.jpg</thumb>
 </fanart>
-<boxart side="back" width="1284" height="1000" thumb="boxart/thumb/original/back/2420-1.jpg">boxart/original/back/2420-1.jpg</boxart>
-<boxart side="front" width="1022" height="1000" thumb="boxart/thumb/original/front/2420-2.jpg">boxart/original/front/2420-2.jpg</boxart>
-<banner width="760" height="140">graphical/2420-g.jpg</banner><clearlogo width="400" height="300">clearlogo/2420.png</clearlogo></Images>
+<boxart side="back" width="2153" height="1838" thumb="boxart/thumb/original/back/1540-1.jpg">boxart/original/back/1540-1.jpg</boxart>
+<boxart side="front" width="645" height="650" thumb="boxart/thumb/original/front/1540-1.jpg">boxart/original/front/1540-1.jpg</boxart>
+<clearlogo width="400" height="151">clearlogo/1540.png</clearlogo></Images>
 </Game>
 </Data>

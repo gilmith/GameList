@@ -37,10 +37,13 @@ import javax.swing.JLabel;
 import org.eclipse.wb.swing.FocusTraversalOnArray;
 
 import gamelist.controller.FolderController;
+import gamelist.controller.GamesDBController;
 
 import java.awt.Component;
 import java.awt.FlowLayout;
 import javax.swing.BoxLayout;
+import javax.swing.JScrollPane;
+import javax.swing.ScrollPaneConstants;
 
 public class PanelPrincipal {
 
@@ -59,6 +62,7 @@ public class PanelPrincipal {
 	private JTextField txtLanzamiento;
 	private JTextField txtNota;
 	private JTextField txtPortada;
+	private FolderController folderController;
 
 	/**
 	 * Launch the application.
@@ -219,7 +223,7 @@ public class PanelPrincipal {
 				JButton btnBusquedaFolder = new JButton("Busqueda");
 				btnBusquedaFolder.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
-						FolderController folderController = new FolderController(rutaRoms);
+						folderController = new FolderController(rutaRoms);
 						txtrRomsEncontradas.setText(folderController.getAutoExplore());
 						
 					}
@@ -572,12 +576,22 @@ public class PanelPrincipal {
 				panelManual.add(btnExplorar, gbc_btnExplorar);
 				
 				JButton btnEjecutar = new JButton("Ejecutar");
+				btnEjecutar.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent e) {
+						GamesDBController gamesDBController = new GamesDBController();
+						gamesDBController.procesa(folderController, rutaRoms + System.getProperty("file.separator" + "gamesList.xml"));
+					}
+				});
 				btnEjecutar.setToolTipText("ejecutar para una rom individual");
 				GridBagConstraints gbc_btnEjecutar = new GridBagConstraints();
 				gbc_btnEjecutar.insets = new Insets(0, 0, 0, 5);
 				gbc_btnEjecutar.gridx = 1;
 				gbc_btnEjecutar.gridy = 12;
 				panelManual.add(btnEjecutar, gbc_btnEjecutar);
+				
+				JScrollPane scrollPane = new JScrollPane(txtrRomsEncontradas);
+				scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+				frmJavaScrapper.getContentPane().add(scrollPane, BorderLayout.CENTER);
 	}
 
 }

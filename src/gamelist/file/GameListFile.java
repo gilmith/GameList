@@ -17,7 +17,7 @@ import gamelist.http.Get;
 public class GameListFile {
 	
 	private String estructura;
-	private Properties xslt;
+	private Properties xslt, properties;
 	
 	public GameListFile(Properties xslt){
 		byte[] encoded = null;

@@ -50,7 +50,7 @@ public class MainExecutor {
 	
 	
 	private static String genGameList(String consulta, String filename, String title){
-		Transformacion transformacion = new Transformacion(Utils.string2File(consulta), "/home/jake/workspace/GameList/xslt/GetGameData.xsl", title);		
+		Transformacion transformacion = new Transformacion(Utils.string2File(consulta, title), "/home/jake/workspace/GameList/xslt/GetGameData.xsl", title);		
 		Properties props = new Properties();
 		try {
 			props.load(transformacion.trans());

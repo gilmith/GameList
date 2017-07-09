@@ -6,7 +6,7 @@ import gamelist.file.FileInspector;
 
 public class FolderController {
 	
-	private String folder;
+	private String folder, platform;
 	private ArrayList<String> nombres, ficheros;
 	
 	public FolderController(String folder) {
@@ -14,32 +14,9 @@ public class FolderController {
 		FileInspector fi = new FileInspector(folder);
 		nombres = fi.getGameListStorage();
 		ficheros = fi.getGameFileName();
+		platform = fi.getPlatform();
 	}
 
-	public String getFolder() {
-		return folder;
-	}
-
-	public void setFolder(String folder) {
-		this.folder = folder;
-	}
-
-	public ArrayList<String> getNombres() {
-		return nombres;
-	}
-
-	public void setNombres(ArrayList<String> nombres) {
-		this.nombres = nombres;
-	}
-
-	public ArrayList<String> getFicheros() {
-		return ficheros;
-	}
-
-	public void setFicheros(ArrayList<String> ficheros) {
-		this.ficheros = ficheros;
-	}
-	
 	public String getAutoExplore() {
 		StringBuilder sb = new StringBuilder();
 		for(String nombre : nombres) {
@@ -48,6 +25,33 @@ public class FolderController {
 		return sb.toString();
 	}
 
+	public ArrayList<String> getFicheros() {
+		return ficheros;
+	}
+
+	public String getFolder() {
+		return folder;
+	}
+
+	public ArrayList<String> getNombres() {
+		return nombres;
+	}
+
+	public String getPlatform() {
+		return platform;
+	}
+
+	public void setFicheros(ArrayList<String> ficheros) {
+		this.ficheros = ficheros;
+	}
+	
+	public void setFolder(String folder) {
+		this.folder = folder;
+	}
+
+	public void setNombres(ArrayList<String> nombres) {
+		this.nombres = nombres;
+	}
 	
 	
 
