@@ -2,29 +2,4 @@
 
 <Data>
 <baseImgUrl>http://thegamesdb.net/banners/</baseImgUrl>
-<Game>
-<id>5120</id>
-<GameTitle>Wolfchild</GameTitle>
-<PlatformId>21</PlatformId>
-<Platform>Sega CD</Platform>
-<ReleaseDate>01/01/1993</ReleaseDate>
-<Overview>The world's most renowned biogenetic scientist has been kidnapped and brainwashed into creating an army of bloodthirsty mutant warriors.
-
-Suddenly the fate of all mankind rests in the hands of his youngest son... and a top-secret mutating experiment known as "Project Wolfchild."
-
--10 freaky levels filled with mind-blowing mazes, brain twisting puzzles and against all-odds combat action.
-
--CD-quality graphics and a rockin' stereo soundtrack
-
--Grusome cast of unrelenting schitzoid mutants, each with the power to destroy
-
--Fully animated introduction sequence</Overview>
-<Genres><genre>Action</genre></Genres><Players>1</Players><Co-op>No</Co-op>
-<Publisher>JVC</Publisher>
-<Developer>Core Design</Developer>
-<Rating>5</Rating><Similar><SimilarCount>5</SimilarCount><Game><id>35734</id><PlatformId>4911</PlatformId></Game><Game><id>25338</id><PlatformId>20</PlatformId></Game><Game><id>4731</id><PlatformId>18</PlatformId></Game><Game><id>3105</id><PlatformId>35</PlatformId></Game><Game><id>2674</id><PlatformId>6</PlatformId></Game></Similar><Images>
-<boxart side="back" width="1530" height="2156" thumb="boxart/thumb/original/back/5120-1.jpg">boxart/original/back/5120-1.jpg</boxart>
-<boxart side="front" width="1539" height="2156" thumb="boxart/thumb/original/front/5120-1.jpg">boxart/original/front/5120-1.jpg</boxart>
-<clearlogo width="400" height="137">clearlogo/5120.png</clearlogo></Images>
-</Game>
 </Data>

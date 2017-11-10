@@ -27,7 +27,7 @@ public class MainExecutor {
 		Get get = new Get();
 		String consulta;
 		try {
-			FileInspector fi = new FileInspector("/mnt/seagate/raspberry/roms/psx/");
+			FileInspector fi = new FileInspector("F:\\raspberry\\roms\\psp\\");
 			ArrayList<String> nombres = fi.getGameListStorage();
 			ArrayList<String> ficheros = fi.getGameFileName();
 			StringBuilder sb = new StringBuilder("<? xml version=\"1.0\" encoding=\"UTF-8\" ?>");
