@@ -135,7 +135,7 @@ public class PanelPrincipal {
 		JPanel panelCentral = new JPanel();
 		frmJavaScrapper.getContentPane().add(panelCentral, BorderLayout.CENTER);
 		
-		JTextArea txtrRomsEncontradas = new JTextArea();
+		final JTextArea txtrRomsEncontradas = new JTextArea();
 		txtrRomsEncontradas.setLineWrap(true);
 		txtrRomsEncontradas.setWrapStyleWord(true);
 		txtrRomsEncontradas.setToolTipText("Roms encontradas en el autoexplore");

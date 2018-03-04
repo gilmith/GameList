@@ -2,10 +2,10 @@
 <testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="com.jacobo.GameList.Maven.AppTest" duration-ms="3" started-at="2018-03-04T19:06:22Z" finished-at="2018-03-04T19:06:22Z">
+  <suite name="com.jacobo.GameList.Maven.AppTest" duration-ms="20" started-at="2018-03-04T19:29:12Z" finished-at="2018-03-04T19:29:13Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="3" started-at="2018-03-04T19:06:22Z" finished-at="2018-03-04T19:06:22Z">
+    <test name="Command line test" duration-ms="20" started-at="2018-03-04T19:29:12Z" finished-at="2018-03-04T19:29:13Z">
     </test> <!-- Command line test -->
   </suite> <!-- com.jacobo.GameList.Maven.AppTest -->
 </testng-results>
