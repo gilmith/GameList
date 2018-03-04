@@ -27,7 +27,7 @@ public class GameListFile {
 		byte[] encoded = null;
 		this.xslt = xslt;
 		try {
-			encoded = Files.readAllBytes(Paths.get("/home/jake/workspace/GameList/xslt/GameList.xml"));
+			encoded = Files.readAllBytes(Paths.get("C:\\Users\\Jacobo\\git\\GameList\\xslt\\GameList.xml"));
 			estructura =  new String(encoded, "UTF-8");
 			getKeys(xslt);
 		} catch (IOException e) {

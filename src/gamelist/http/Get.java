@@ -43,7 +43,7 @@ public class Get {
 				"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)");
 		InputStream in = uc.getInputStream();
 		try {
-			Files.copy(in, Paths.get("/mnt/seagate/raspberry/roms/psx/downloaded_images/" + 
+			Files.copy(in, Paths.get("/mnt/seagate/raspberry/roms/gba/downloaded_images/" + 
 					portdaSplitted));
 		} catch(FileAlreadyExistsException faex){
 			System.out.println("Portada ya descargada, juego multidisco");

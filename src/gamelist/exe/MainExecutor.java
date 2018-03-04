@@ -27,7 +27,7 @@ public class MainExecutor {
 		Get get = new Get();
 		String consulta;
 		try {
-			FileInspector fi = new FileInspector("F:\\raspberry\\roms\\psp\\");
+			FileInspector fi = new FileInspector("F:\\raspberry\\roms\\gba\\");
 			ArrayList<String> nombres = fi.getGameListStorage();
 			ArrayList<String> ficheros = fi.getGameFileName();
 			StringBuilder sb = new StringBuilder("<? xml version=\"1.0\" encoding=\"UTF-8\" ?>");
@@ -50,7 +50,7 @@ public class MainExecutor {
 	
 	
 	private static String genGameList(String consulta, String filename, String title){
-		Transformacion transformacion = new Transformacion(Utils.string2File(consulta, title), "/home/jake/workspace/GameList/xslt/GetGameData.xsl", title);		
+		Transformacion transformacion = new Transformacion(Utils.string2File(consulta, title), "C:\\Users\\Jacobo\\git\\GameList\\xslt\\GetGameData.xsl", title);		
 		Properties props = new Properties();
 		try {
 			props.load(transformacion.trans());
